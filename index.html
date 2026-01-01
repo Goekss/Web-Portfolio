@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onur Gökhan Bicer | Softwareentwickler – Portfolio</title>
+
+  <meta name="description" content="Portfolio von Onur Gökhan Bicer, Softwareentwickler aus Stuttgart. Schwerpunkte: C#, ASP.NET Core, JavaScript und React – mit Projekten, Lebenslauf und Nachweisen." />
+  <meta name="author" content="Onur Gökhan Bicer" />
+  <meta name="theme-color" content="#0b0b0b" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Onur Gökhan Bicer | Softwareentwickler" />
+  <meta property="og:description" content="Praxisnahe Webanwendungen mit .NET, C#, JavaScript und React – Projekte, Lebenslauf und Kontakt." />
+  <meta property="og:locale" content="de_DE" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" href="img/favicon3.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <link rel="stylesheet" href="style.css?v=20260915" />
+</head>
+
+<body>
+
+  <a class="skip-link" href="#startseite">Zum Inhalt springen</a>
+
+  <div class="global-bg"></div>
+  <div class="mouse-tracker" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <nav class="topbar">
+    <a class="logo" href="#startseite" aria-label="Zur Startseite">OGB <span class="logo-sep">|</span> <small class="logo-location">Stuttgart</small></a>
+    <button class="menu-toggle" aria-label="Menü öffnen" aria-controls="navLinks" aria-expanded="false" id="menuToggle">
+      <span class="icon-bar"></span>
+      <span class="icon-bar icon-right"></span>
+      <span class="icon-bar icon-left"></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#startseite"><i class='bx bx-home-alt-2'></i><span class="nav-label">Startseite</span></a></li>
+      <li><a href="#uber-mich"><i class='bx bx-user'></i><span class="nav-label">Über mich</span></a></li>
+      <li><a href="#fahigkeiten"><i class='bx bx-file'></i><span class="nav-label">Dokumente</span></a></li>
+      <li><a href="#kompetenzen"><i class='bx bx-layer'></i><span class="nav-label">Kompetenzen</span></a></li>
+      <li><a href="#projekte"><i class='bx bx-code-block'></i><span class="nav-label">Projekte</span></a></li>
+      <li><a href="#kurs"><i class='bx bx-book-open'></i><span class="nav-label">Weiterbildungen</span></a></li>
+      <li><a href="#kontakt"><i class='bx bx-envelope'></i><span class="nav-label">Kontakt</span></a></li>
+    </ul>
+  </nav>
+
+
+  <!-- HERO -->
+  <header class="hero-section" id="startseite">
+    <div class="hero-content">
+      <p class="hero-kicker ">Softwareentwickler</p>
+      <h1>Onur Gökhan Bicer</h1>
+      
+      <!-- <p class="hero-role"></p> -->
+      
+      
+      <p class="hero-note">Ich entwickle praxisnahe Webanwendungen mit Fokus auf Backend-Logik, klare Oberflächen und verlässliche Umsetzung.</p>
+      
+      <aside class="mouse">
+        <div class="help-mouse-down"><i class="help-mouse-wheel"></i></div><span class="help-down"></span>
+      </aside>
+
+
+    </div>
+  </header>
+
+  <!-- SECTIONS (JS ile oluşur) -->
+
+  <!-- OVERLAY -->
+  <section class="cv-cards-wrapper" id="cvCardsWrapper">
+    <div class="cv-modal">
+      <button class="close-btn" aria-label="Overlay schließen">✕</button>
+      <div class="container" id="cvCardContainer"></div>
+    </div>
+  </section>
+
+  <script src="app.js?v=20260923"></script></script>
+
+
+
+ <!-- COOKIE BANNER BASLANGICI -->
+  <div class="cookie-banner hidden" id="cookieBanner">
+    <div class="cookie-content">
+      <h3 class="cookie-title">
+        Ich schätze Ihre Privatsphäre
+      </h3>
+      <p>
+        Ich verwende Cookies gemäß der DSGVO, um Statistiken über die Besuche auf meiner Website zu erfassen und mein Portfolio kontinuierlich zu verbessern. 
+        Zu diesem Zweck nutze ich Google Analytics. Die Zugriffe werden dabei anonymisiert und 
+        vollständig im Einklang mit der europäischen Datenschutz-Grundverordnung (DSGVO) ausgewertet.
+      </p>
+      
+      <div class="cookie-buttons">
+       
+        <button id="acceptCookies" class="btn-accept">Alle akzeptieren</button>
+        <button id="rejectCookies" class="btn-reject">Ablehnen</button>
+      </div>
+
+      <!--  Alt Linkler -->
+      <div class="cookie-links">
+        <button type="button" class="cookie-legal-toggle" data-legal="privacy">Datenschutzerklärung</button>
+        <button type="button" class="cookie-legal-toggle" data-legal="imprint">Impressum</button>
+      </div>
+
+      <div class="cookie-legal-panel hidden" id="cookieLegalPanel" aria-live="polite"></div>
+    </div>
+  </div>
+  
+
+
+</body>
+ 
+
+</html>
