@@ -49,3 +49,5 @@
 
 - [2026-01-24 15:25:35] test(responsive): cross-browser layout regression testing on safari and chrome
 
+- [2026-01-24 18:30:45] docs: update readme with live deployment url and build instructions
+
