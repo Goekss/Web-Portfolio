@@ -63,3 +63,5 @@
 
 - [2026-01-26 16:40:40] feat(contact): contact form with web3forms api and client-side validation
 
+- [2026-01-29 09:45:12] feat(blog): mdx-powered technical articles and code snippet syntax highlighter
+
