@@ -69,3 +69,5 @@
 
 - [2026-01-29 18:15:10] feat(analytics): privacy-focused lightweight pageview and visitor telemetry
 
+- [2026-01-30 11:35:20] feat(sound): ambient sound effects and interactive audio toggle
+
