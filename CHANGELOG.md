@@ -73,3 +73,5 @@
 
 - [2026-01-31 10:25:15] feat(terminal): retro interactive cli terminal widget for developer easter egg
 
+- [2026-01-31 16:40:40] feat(seo): dynamic open graph image generator and json-ld schema markup
+
