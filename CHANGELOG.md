@@ -89,3 +89,5 @@
 
 - [2026-02-04 09:20:10] perf(bundle): implement dynamic component chunking for sub-second fcp
 
+- [2026-02-04 11:50:20] style(typography): integrate bespoke grotesque display font and kerning
+
