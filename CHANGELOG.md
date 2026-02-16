@@ -113,3 +113,5 @@
 
 - [2026-02-15 16:40:40] feat(blog): mdx-powered technical articles and code snippet syntax highlighter
 
+- [2026-02-16 10:25:15] feat(i18n): multi-language localization support (en, de, tr)
+
