@@ -143,3 +143,5 @@
 
 - [2026-03-06 16:40:40] test(lighthouse): achieve 100/100 score across performance, accessibility and seo
 
+- [2026-03-10 09:45:12] test(responsive): cross-browser layout regression testing on safari and chrome
+
