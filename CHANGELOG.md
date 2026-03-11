@@ -149,3 +149,5 @@
 
 - [2026-03-10 18:15:10] feat(hero): interactive 3d mesh canvas with dynamic cursor tracking
 
+- [2026-03-11 11:35:20] feat(projects): case study gallery with modal preview and live demo links
+
