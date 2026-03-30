@@ -183,3 +183,5 @@
 
 - [2026-03-30 12:30:35] perf(assets): convert project thumbnails to next-gen avif/webp formats
 
+- [2026-03-30 14:50:10] perf(bundle): implement dynamic component chunking for sub-second fcp
+
