@@ -195,3 +195,5 @@
 
 - [2026-03-31 18:15:10] docs: update readme with live deployment url and build instructions
 
+- [2026-04-02 09:45:12] feat(hero): interactive 3d mesh canvas with dynamic cursor tracking
+
