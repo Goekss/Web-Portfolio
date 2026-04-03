@@ -201,3 +201,5 @@
 
 - [2026-04-02 18:15:10] feat(skills): interactive radar chart and tech stack proficiency matrix
 
+- [2026-04-03 10:25:15] feat(experience): vertical timeline view with role milestone highlights
+
