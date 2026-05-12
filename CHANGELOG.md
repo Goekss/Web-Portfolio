@@ -269,3 +269,5 @@
 
 - [2026-05-10 16:40:40] fix(hero): prevent webgl context lost on tab background switch
 
+- [2026-05-12 10:25:15] fix(contact): sanitize message textarea input to prevent xss injection
+
