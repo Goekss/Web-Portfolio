@@ -285,3 +285,5 @@
 
 - [2026-05-14 18:15:10] style(animations): polish framer-motion page transition spring physics
 
+- [2026-05-15 09:45:12] test(lighthouse): achieve 100/100 score across performance, accessibility and seo
+
