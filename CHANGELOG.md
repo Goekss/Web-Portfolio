@@ -307,3 +307,5 @@
 
 - [2026-05-21 09:45:12] feat(i18n): multi-language localization support (en, de, tr)
 
+- [2026-05-21 14:20:30] feat(analytics): privacy-focused lightweight pageview and visitor telemetry
+
