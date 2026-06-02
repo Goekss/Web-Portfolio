@@ -331,3 +331,5 @@
 
 - [2026-05-29 11:35:20] style(typography): integrate bespoke grotesque display font and kerning
 
+- [2026-06-02 11:35:20] style(animations): polish framer-motion page transition spring physics
+
