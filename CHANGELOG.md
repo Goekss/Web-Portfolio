@@ -439,3 +439,5 @@
 
 - [2026-07-22 11:50:20] feat(projects): case study gallery with modal preview and live demo links
 
+- [2026-07-22 15:25:35] feat(skills): interactive radar chart and tech stack proficiency matrix
+
