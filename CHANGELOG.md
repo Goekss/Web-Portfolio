@@ -465,3 +465,5 @@
 
 - [2026-08-03 15:25:35] fix(mobile): adjust viewport height units (dvh) for mobile safari address bar
 
+- [2026-08-03 18:30:45] refactor(components): extract reusable magnetic button and card tilt hooks
+
