@@ -467,3 +467,5 @@
 
 - [2026-08-03 18:30:45] refactor(components): extract reusable magnetic button and card tilt hooks
 
+- [2026-08-06 10:25:15] refactor(styles): modernize css variables with semantic color tokens
+
