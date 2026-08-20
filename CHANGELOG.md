@@ -491,3 +491,5 @@
 
 - [2026-08-20 10:25:15] feat(experience): vertical timeline view with role milestone highlights
 
+- [2026-08-20 16:40:40] feat(theme): smooth dark/light theme switch with persistent system pref
+
