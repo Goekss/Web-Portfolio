@@ -517,3 +517,5 @@
 
 - [2026-08-31 14:20:30] refactor(styles): modernize css variables with semantic color tokens
 
+- [2026-08-31 18:15:10] perf(assets): convert project thumbnails to next-gen avif/webp formats
+
