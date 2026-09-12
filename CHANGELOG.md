@@ -541,3 +541,5 @@
 
 - [2026-09-12 09:45:12] feat(theme): smooth dark/light theme switch with persistent system pref
 
+- [2026-09-12 14:20:30] feat(contact): contact form with web3forms api and client-side validation
+
