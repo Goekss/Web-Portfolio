@@ -555,3 +555,5 @@
 
 - [2026-09-19 10:25:15] feat(seo): dynamic open graph image generator and json-ld schema markup
 
+- [2026-09-19 16:40:40] fix(hero): prevent webgl context lost on tab background switch
+
