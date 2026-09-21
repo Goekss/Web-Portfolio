@@ -559,3 +559,5 @@
 
 - [2026-09-20 11:35:20] fix(contact): sanitize message textarea input to prevent xss injection
 
+- [2026-09-21 09:45:12] fix(mobile): adjust viewport height units (dvh) for mobile safari address bar
+
