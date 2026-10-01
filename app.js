@@ -17,7 +17,7 @@ function renderProjectTechIcons() {
     "C#": "devicon-csharp-plain colored",
     "ASP.NET MVC": "devicon-dot-net-plain colored",
     "ASP.NET": "devicon-dot-net-plain-wordmark colored",
-    "ASP.NET Core":"devicon-dotnetcore-plain colored",
+    "ASP.NET Core": "devicon-dotnetcore-plain colored",
     "EF Core": "devicon-entityframeworkcore-plain colored",
     "Entity Framework": "devicon-entityframeworkcore-plain colored",
     "Razor": "devicon-dot-net-plain colored",
@@ -27,7 +27,7 @@ function renderProjectTechIcons() {
     "XAML": "",
     "Twilio": "devicon-twilio-plain colored",
     "Mysql": "devicon-mysql-original colored",
-    
+
     "SQL": "devicon-microsoftsqlserver-plain colored",
     "SQL Server": "devicon-microsoftsqlserver-plain colored",
     "Bootstrap": "devicon-bootstrap-plain colored",
@@ -46,13 +46,13 @@ function renderProjectTechIcons() {
     "Python": "devicon-python-plain colored",
     "NumPy": "devicon-numpy-plain colored",
     "Pandas": "devicon-pandas-original colored",
-    "Matplotlib":"devicon-matplotlib-plain white",
-    "Redis":"devicon-redis-plain-wordmark colored",
+    "Matplotlib": "devicon-matplotlib-plain white",
+    "Redis": "devicon-redis-plain-wordmark colored",
     "scikit-learn": "devicon-scikitlearn-plain colored",
     "Docker": "devicon-docker-plain-wordmark colored",
     "Docker2": "devicon-docker-plain colored",
     "Azure": "devicon-azure-plain colored",
-    "Swagger":"devicon-swagger-plain  colored",
+    "Swagger": "devicon-swagger-plain  colored",
     "AJAX": "",       // ikon yok, fallback gösterilecek
     "MailKit": "",    // ikon yok
     "SignalR": "",    // ikon yok
@@ -138,9 +138,9 @@ function renderHeroIcons() {
   if (!heroRole) return;
 
   const heroTechs = [
-    { key: "C#",         cls: "devicon-csharp-plain colored" },
-    { key: "ASP.NET",    cls: "devicon-dot-net-plain colored" },
-    { key: "React",      cls: "devicon-react-plain colored" },
+    { key: "C#", cls: "devicon-csharp-plain colored" },
+    { key: "ASP.NET", cls: "devicon-dot-net-plain colored" },
+    { key: "React", cls: "devicon-react-plain colored" },
     { key: "JavaScript", cls: "devicon-javascript-plain colored" }
   ];
 
@@ -505,7 +505,7 @@ const projectsData = [
     subtitle: "Full-Stack SaaS · RAG-KI · CRM",
     aiIcon: true,
     aiIconDelayed: true,
-    labLink: { href: "https://goekss.github.io/VCoreX-Demo/", text: "Live View" },
+    labLink: { href: "https://goekss.github.io/CoreX-Demo/", text: "Live View" },
     images: [
       { src: "CoreXDark.png", alt: "Vista.CoreX – Dashboard im Dark Mode" },
       { src: "CoreXLight.png", alt: "Vista.CoreX – Dashboard im Light Mode" }
@@ -517,7 +517,7 @@ const projectsData = [
     rolle: "Eigenverantwortliche Umsetzung von Grund auf: Datenbankmodell, REST-API, RAG-Pipeline, React-Frontend (Dark/Light Mode) und Docker-Setup.",
     tech: "C#, ASP.NET Core, EF Core, SQL Server, JavaScript, React, Vite, Axios, Bootstrap, Swagger, Redis, Docker, Azure, xUnit, GitHub Actions, SignalR, JWT, Recharts, Ollama, Qdrant, Semantic Kernel",
     status: "ongoing",
-    github: "https://github.com/Goekss/SaaS.Corex"
+    github: "https://github.com/Goekss/Vista.CoreX"
   },
   {
     title: "GoAI ChatLab",
@@ -525,7 +525,7 @@ const projectsData = [
     aiIcon: true,
     aiIconDelayed: true,
     sleepHint: true,
-    labLink: { href: "https://huggingface.co/spaces/Daddarios/GoAI-Lab", text: "Live Preview" },
+    labLink: { href: "https://goekss.github.io/GoAI-ChatLab/", text: "Live Preview" },
     images: [
       { src: "GoAI1.png", alt: "GoAI ChatLab – Chat-Oberfläche" },
       { src: "GoAI3.png", alt: "GoAI ChatLab – Datei-Upload und Antwortansicht" }
@@ -537,7 +537,7 @@ const projectsData = [
     rolle: "Konzept, Sicherheitsarchitektur, React-Frontend, Express-Proxy, Docker-Konfiguration und CI/CD-Pipeline.",
     tech: "React, Node.js, Express.js, JavaScript, HTML5, CSS3, GitHub Actions, Docker, REST APIs, Client-side File Parsing, OpenRouter AI",
     status: "completed",
-    github: "https://github.com/Daddarios/GoAI-Chat-Assistant"
+    github: "https://github.com/Goekss/GoAI-ChatLab"
   },
   {
     title: "Portfolio Website",
@@ -553,10 +553,10 @@ const projectsData = [
     rolle: "Konzept, UI-Design, Implementierung und Deployment.",
     tech: "HTML5, CSS3, JavaScript, Bootstrap, GitHub",
     status: "completed",
-    github: "https://github.com/Daddarios/onur-gokhan-bicer-webportfolio.git"
+    github: "https://github.com/Goekss/Web-Portfolio"
   },
   {
-    title: "VISTA",
+    title: "CRMApp-Nova",
     subtitle: "React SPA · JWT · REST-API",
     images: [
       { src: "vistaperson.png", alt: "VISTA – Personenverwaltung im React-Frontend" },
@@ -569,7 +569,7 @@ const projectsData = [
     rolle: "UI-Konzept, React-Implementierung, API-Integration und State-Architektur.",
     tech: "React, React Router, JavaScript, HTML5, CSS3, JWT, REST APIs",
     status: "ongoing",
-    github: "https://github.com/Daddarios/Vista.git"
+    github: "https://github.com/Goekss/CrmAppNova"
   },
   {
     title: "CRM-Anwendung",
@@ -585,7 +585,7 @@ const projectsData = [
     rolle: "Eigenständige Umsetzung aller Schichten: Datenbankdesign, Backend-Logik, Authentifizierung, REST-API und Benutzeroberfläche.",
     tech: "C#, ASP.NET MVC, Entity Framework Core, SQL Server, HTML5, CSS3, Bootstrap, JavaScript, jQuery, JWT, Twilio, MailKit, RESTful APIs, GitHub",
     status: "completed",
-    github: "https://github.com/Daddarios/CrmAPP"
+    github: "https://github.com/Goekss/CrmAPP"
   },
   {
     title: "Klinik Raum Stuttgart",
@@ -601,7 +601,7 @@ const projectsData = [
     rolle: "Eigenständige Umsetzung im Rahmen der Weiterbildung zum Fachinformatiker.",
     tech: "C#, .NET Framework, Windows Forms, SQL Server, Visual Studio",
     status: "completed",
-    github: "https://github.com/Daddarios/Klinikum_Stuttgart.git"
+    github: "https://github.com/Goekss/Klinikum_Stuttgart"
   },
   {
     title: "Photo BLOG",
@@ -617,7 +617,7 @@ const projectsData = [
     rolle: "UI-Konzept, Layoutstruktur und vollständige CSS-Umsetzung.",
     tech: "HTML5, CSS3",
     status: "completed",
-    github: "https://github.com/Daddarios/Personal-Page.git"
+    github: "#"
   }
 ];
 
@@ -655,6 +655,7 @@ function renderProjectCard(p) {
   const status = p.status === "ongoing"
     ? `<span class="status-ongoing">In Entwicklung</span>`
     : `<span class="status-completed">Abgeschlossen</span>`;
+
   const metaRows = [
     ["Problem", p.problem],
     ["Ansatz", p.ansatz],
@@ -940,10 +941,10 @@ const contentMap = {
   /* ===== PROJEKTE ===== */
   "projekte": buildProjectsHTML()
 
-  
+
   ,
-/* ===== Weiterbildung ===== */
-"kurs": `
+  /* ===== Weiterbildung ===== */
+  "kurs": `
         <section class="education-section">
           <div class="education-container">
             <h2 id="wb" class="section-title">Weiterbildungen</h2>
@@ -979,7 +980,7 @@ const contentMap = {
         </section>
        `
 
-,
+  ,
   /* ===== KONTAKT ===== */
 
   "kontakt": `
@@ -1015,14 +1016,15 @@ const contentMap = {
 
 
 function renderKontaktMail() {
-  const user = "og.bicer";
-  const domain = "web.de";
+  const user = "gokhanbicer";
+  const domain = "mail.de";
   const mail = `${user}@${domain}`;
   const span = document.getElementById("kontaktMail");
   if (span) {
     span.innerHTML = `<a href="mailto:${mail}">${mail}</a>`;
   }
 }
+
 
 function enhanceProjectMedia() {
   document.querySelectorAll(".project-image").forEach((media) => {
@@ -1350,7 +1352,7 @@ footer.innerHTML = `
   <button class="footer-legal-link" type="button" data-legal="privacy">Datenschutz</button>
   <button class="footer-legal-link" type="button" data-legal="imprint">Impressum</button>
 
-  <a href="https://github.com/Daddarios" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+  <a href="https://github.com/Goekss" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
     <i class='bx bxl-github' ></i>
   </a>
 
@@ -1386,12 +1388,12 @@ const legalContent = {
     <strong>Datenschutzerklärung</strong>
     <span>Diese Website verwendet Google Analytics erst nach Ihrer ausdrücklichen Zustimmung. Ohne Zustimmung werden keine Analytics-Skripte geladen.</span>
     <span>Die Zustimmung wird lokal im Browser gespeichert und kann durch Löschen des Browser-Speichers zurückgesetzt werden.</span>
-    <span>Kontakt für Datenschutzfragen: <a href="mailto:og.bicer@web.de">og.bicer@web.de</a></span>
+    <span>Kontakt für Datenschutzfragen: <a href="mailto:gokhanbicer@mail.de">gokhanbicer@mail.de</a></span>
   `,
   imprint: `
     <strong>Impressum</strong>
     <span>Onur Gökhan Bicer</span>
-    <span>Kontakt: <a href="mailto:og.bicer@web.de">og.bicer@web.de</a></span>
+    <span>Kontakt: <a href="mailto:gokhanbicer@mail.de">gokhanbicer@mail.de</a></span>
     <span class="legal-warning">Hinweis: Die ladungsfähige Anschrift muss vor öffentlichem produktivem Betrieb ergänzt werden. Ich trage hier bewusst keine erfundene Adresse ein.</span>
   `
 };
@@ -1415,26 +1417,26 @@ document.addEventListener("click", (e) => {
 });
 
 /* ===== CONTACT FORM MAILTO ===== */
-document.addEventListener("submit", function(e){
-  if(e.target.id === "contactForm"){
+document.addEventListener("submit", function (e) {
+  if (e.target.id === "contactForm") {
     e.preventDefault();
 
-    const name=document.getElementById("name").value;
-    const email=document.getElementById("email").value;
-    const message=document.getElementById("message").value;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-    const mail="og.bicer@web.de";
+    const mail = "gokhanbicer@mail.de";
 
-    const subject=encodeURIComponent("Portfolio Kontakt von "+name);
-    const body=encodeURIComponent(
-`Name: ${name}
+    const subject = encodeURIComponent("Portfolio Kontakt von " + name);
+    const body = encodeURIComponent(
+      `Name: ${name}
 Email: ${email}
 
 Nachricht:
 ${message}`
     );
 
-    window.location.href=`mailto:${mail}?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${mail}?subject=${subject}&body=${body}`;
   }
 });
 
