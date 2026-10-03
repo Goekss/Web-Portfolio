@@ -15,9 +15,11 @@
 
 ### 📌 Über das Projekt
 
-Dies ist das persönliche Entwickler-Portfolio von **Onur Gökhan Bicer**, Softwareentwickler aus Stuttgart mit Schwerpunkt auf **C#, .NET (ASP.NET Core / MVC), JavaScript, React, SQL Server und moderner KI-Integration (RAG, Semantic Kernel, Ollama)**.
+Herzlich willkommen! 👋 Schön, dass du auf meinem Portfolio vorbeischaust.
 
-Die Website wurde bewusst **ohne externe UI-Frameworks oder Build-Tools** (wie React, Next.js, Webpack oder Vite) entwickelt. Sie demonstriert, dass sich ein hochperformantes, modernes und barrierearmes Web-Erlebnis mit sauberem **Vanilla HTML5, modernem CSS3 und modularem ES6+ JavaScript** realisieren lässt — schlank (~50 KB JS-Logik), blitzschnell und frei von unnötigem Dependency-Overhead.
+Diese Seite dient als persönlicher Hub, um meine Softwareprojekte, Weiterbildungen und Nachweise übersichtlich an einem Ort zu bündeln. Ich verfolge moderne Technologien mit großem Interesse und habe den Anspruch, jeden Tag Neues zu lernen und mich kontinuierlich weiterzuentwickeln.
+
+Das Portfolio habe ich ganz bewusst ohne überflüssige Frameworks umgesetzt – schlank, geradlinig und mit purem **HTML5, CSS3 und JavaScript**.
 
 ---
 
@@ -98,9 +100,11 @@ Da dieses Projekt ohne Build-Tools auskommt, kann es sofort mit jedem statischen
 
 ### 📌 Proje Hakkında
 
-Bu depo, Stuttgart'ta yaşayan Yazılım Geliştirici **Onur Gökhan Bicer**'in kişisel web portfolyosudur. Odak alanları: **C#, .NET (ASP.NET Core / MVC), JavaScript, React, SQL Server ve modern Yapay Zekâ entegrasyonlarıdır (RAG, Semantic Kernel, Ollama)**.
+Merhaba! 👋 Kişisel web portfolyoma hoş geldin.
 
-Bu web sitesi, React, Next.js, Webpack veya Vite gibi harici UI kütüphaneleri veya derleme araçları kullanılmadan, **saf (vanilla) web teknolojileri** ile sıfırdan inşa edilmiştir. Temiz **Vanilla HTML5, modern CSS3 ve modüler ES6+ JavaScript** ile yüksek performanslı, hızlı ve bağımlılıksız bir mimari hedeflenmiştir.
+Bu sayfayı; geliştirdiğim projeleri, aldığım eğitimleri ve çalışma belgelerimi derli toplu bir arada tutmak için tasarladım. Günümüz teknolojilerini yakından takip ediyor, her gün yeni bir şeyler öğrenerek kendimi bir adım öteye taşımaya odaklanıyorum.
+
+Bu siteyi de tam bu bakış açısıyla, karmaşadan uzak standar **HTML5, CSS3 ve JavaScript** kullanarak sıfırdan hazırladım.
 
 ---
 
