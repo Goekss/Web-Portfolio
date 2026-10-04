@@ -1,4 +1,4 @@
-﻿
+
 /* =====================================================
    PROJECT TECH ICONS  ##013 05.02
    ===================================================== */
@@ -502,7 +502,7 @@ dom.topbar.querySelector(".logo")?.addEventListener("click", () => {
 const projectsData = [
   {
     title: "Vista.Core + Vista.CoreX",
-    subtitle: "Full-Stack SaaS · RAG-KI · CRM",
+    subtitle: "B2B SaaS (KMU) · Lokales RAG · Multi-Tenancy",
     aiIcon: true,
     aiIconDelayed: true,
     labLink: { href: "https://goekss.github.io/CoreX-Demo/", text: "Live View" },
@@ -510,111 +510,110 @@ const projectsData = [
       { src: "CoreXDark.png", alt: "Vista.CoreX – Dashboard im Dark Mode" },
       { src: "CoreXLight.png", alt: "Vista.CoreX – Dashboard im Light Mode" }
     ],
-    lead: "Vista.Core / Vista.CoreX ist eine modulare SaaS-Plattform, die CRM-Prozesse mit einem datenschutzkonformen KI-Assistenten verbindet &ndash; Firmendaten verlassen dabei nie den eigenen Server.",
-    problem: "Unternehmen wollen KI-gestützte Auskunft auf interne Dokumente, ohne sensible Daten an externe Anbieter wie OpenAI weiterzugeben. Gleichzeitig sollen CRM, Aufgaben und Kommunikation in einer einzigen Oberfläche laufen.",
-    ansatz: "Backend: .NET Web API mit EF Core, JWT-Auth und SignalR für Echtzeit-Updates. KI-Schicht: lokales RAG-Setup mit <code>Ollama</code> als LLM-Runner und <code>Qdrant</code> als Vektordatenbank &ndash; Antworten basieren ausschließlich auf hochgeladenen Firmendokumenten. Gesamte Infrastruktur per <code>docker compose</code> reproduzierbar.",
-    ergebnis: "Produktionsreifes Grundgerüst mit vollständigem Auth-Flow, CRM-Modulen und einem Chat-Assistenten, der Dokumente semantisch durchsucht und präzise antwortet. Architektur ist bewusst auf spätere Mandantenfähigkeit ausgelegt. Wird aktiv weiterentwickelt.",
-    rolle: "Eigenverantwortliche Umsetzung von Grund auf: Datenbankmodell, REST-API, RAG-Pipeline, React-Frontend (Dark/Light Mode) und Docker-Setup.",
+    lead: "Modulare B2B-SaaS-Lösung für KMU mit entkoppeltem .NET 9 Backend und React-Frontend. Ergänzt durch einen lokalen RAG-Assistenten, um Datenverarbeitung ohne Drittanbieter-Cloud im eigenen Netzwerk zu halten.",
+    problem: "KMU stehen vor dem Dilemma, KI-Funktionen auf internen Dokumenten nutzen zu wollen, während sensible Geschäftsdaten aus Datenschutz- und Compliance-Gründen nicht an externe Cloud-APIs abfließen dürfen.",
+    ansatz: "Privacy-by-Design: Lokale Inferenz über <code>Ollama</code> und <code>Qdrant</code>, orchestriert via <code>Semantic Kernel</code>. Das Backend erzwingt strikte Mandantentrennung direkt über globale EF Core Query Filter. Entkoppelte React-SPA mit SignalR-WebSockets für Echtzeit-Interaktion.",
+    ergebnis: "Funktionsfähige SaaS-Basis mit 10+ Fachmodulen (Kunden, Tickets, Projekte, Chat). Mandanten-Isolation durch 6 xUnit-Integrationstests abgesichert. Vollständig per Docker Compose reproduzierbar &ndash; die Datenverarbeitung bleibt lokal im Haus.",
+    rolle: "Eigenverantwortliche Konzeption und Full-Stack-Umsetzung: API- und Datenmodellierung in .NET 9, RAG-Pipeline-Integration sowie modulare Frontend-Entwicklung in React.",
     tech: "C#, ASP.NET Core, EF Core, SQL Server, JavaScript, React, Vite, Axios, Bootstrap, Swagger, Redis, Docker, Azure, xUnit, GitHub Actions, SignalR, JWT, Recharts, Ollama, Qdrant, Semantic Kernel",
     status: "ongoing",
     github: "https://github.com/Goekss/Vista.CoreX"
   },
   {
     title: "GoAI ChatLab",
-    subtitle: "KI-Chat · Datei-Upload · Live Demo",
+    subtitle: "100% Kostenfrei · Ohne Abo · Document & Vision",
     aiIcon: true,
     aiIconDelayed: true,
-    sleepHint: true,
     labLink: { href: "https://goekss.github.io/GoAI-ChatLab/", text: "Live Preview" },
     images: [
       { src: "GoAI1.png", alt: "GoAI ChatLab – Chat-Oberfläche" },
       { src: "GoAI3.png", alt: "GoAI ChatLab – Datei-Upload und Antwortansicht" }
     ],
-    lead: "Ein produktionsnaher KI-Chat-Client mit Datei-Upload &ndash; öffentlich erreichbar auf Hugging Face Spaces, vollständig über CI/CD deployed.",
-    problem: "Viele KI-Demos speichern API-Keys im Browser oder können keine Dateien als Gesprächskontext einbinden. Beides war für eine öffentlich zugängliche Anwendung nicht akzeptabel.",
-    ansatz: "Express-Proxy als sicheres Backend-Zwischenglied: der API-Key bleibt serverseitig, der Client sendet nur bereinigten Text. Datei-Parsing (txt, md, pdf) läuft clientseitig, damit der Server zustandslos bleibt. GitHub Actions baut und deployed automatisch bei jedem Push.",
-    ergebnis: "Stabil laufende öffentliche Demo mit funktionierendem Datei-Upload und automatisiertem Deployment-Prozess. Architektur ist so aufgebaut, dass sie sich direkt zu einem vollständigen RAG-System erweitern lässt.",
-    rolle: "Konzept, Sicherheitsarchitektur, React-Frontend, Express-Proxy, Docker-Konfiguration und CI/CD-Pipeline.",
+    lead: "Multimodale KI-Plattform mit clientseitiger Dokumenten- und Bildanalyse (PDF, Office, Vision) &ndash; 100% kostenfrei, ohne Paywalls und ohne monatliche Abogebühren.",
+    problem: "Kommerzielle KI-Tools binden Nutzer an teure Monatsabos (20$+), während frei zugängliche Top-Modelle oft an komplizierten Oberflächen scheitern. Zudem riskieren typische Gratis-Web-Demos API-Key-Leaks im Browser oder Serverüberlastungen bei großen Datei-Uploads.",
+    ansatz: "Freier KI-Zugang ohne Abo: Intelligente Bündelung leistungsfähiger <code>OpenRouter</code>-Modelle (Llama, Qwen, StepFun) in einer einheitlichen Oberfläche. Client-side Parsing (<code>PDF, Word, Excel, Vision</code>) hält das Backend schlank und eliminiert Serverkosten; der <code>Express-Proxy</code> schützt sensible API-Keys.",
+    ergebnis: "Frei zugängliche, multimodale Open-Source-Lösung für jedermann: Keine Paywalls, keine Abos &ndash; das Geld bleibt im Geldbeutel! Minimaler Server-Footprint und automatisiert per CI/CD auf <code>GitHub Pages</code> bereitgestellt.",
+    rolle: "Vollständig eigenes Konzept und eigenverantwortliche Full-Stack-Entwicklung von Grund auf: <code>React 19</code> Frontend (Glassmorphism), zustandsloser <code>Express-Proxy</code>, clientseitige Parsing-Pipeline und CI/CD-Deployment.",
     tech: "React, Node.js, Express.js, JavaScript, HTML5, CSS3, GitHub Actions, Docker, REST APIs, Client-side File Parsing, OpenRouter AI",
     status: "completed",
     github: "https://github.com/Goekss/GoAI-ChatLab"
   },
   {
     title: "Portfolio Website",
-    subtitle: "Vanilla JS · DSGVO · No-Build",
+    subtitle: "Persönliches Web-Portfolio · DSGVO-konform",
     images: [
       { src: "portfolio1.png", alt: "Portfolio Website – Startseite" },
       { src: "portfolio2.png", alt: "Portfolio Website – Projektübersicht" }
     ],
-    lead: "Diese Seite &ndash; bewusst ohne Framework gebaut, um zu zeigen, dass saubere Architektur kein Build-Tool braucht.",
-    problem: "Portfolioseiten mit Frameworks wie React oder Next.js laden oft unnötig viel Overhead für im Kern statische Inhalte. Ziel war eine schlanke, wartbare Lösung, die trotzdem modern wirkt.",
-    ansatz: "Vanilla HTML/CSS/JS: alle Sektionen werden aus einer zentralen <code>contentMap</code> gerendert, Overlay-Struktur ersetzt separate Seiten. Cookie-Banner nach DSGVO-Grundprinzipien, kein Third-Party-Tracking ohne Zustimmung.",
-    ergebnis: "Gesamte Anwendungslogik in drei Dateien, ~50&nbsp;KB JavaScript. Kein Build-Schritt, kein Dependency-Overhead &ndash; deployed in Sekunden, vollständig responsive.",
-    rolle: "Konzept, UI-Design, Implementierung und Deployment.",
+    lead: "Meine persönliche Web-Plattform &ndash; vollständig von Grund auf eigenständig entwickelt, um Softwareprojekte, Weiterbildungen und Arbeitszeugnisse interaktiv an einem zentralen Ort zu präsentieren.",
+    problem: "Klassische, statische Lebensläufe können die tatsächlichen Fähigkeiten, den Qualitätsanspruch und die technische Tiefe eines Entwicklers oft nur unzureichend vermitteln. Es fehlte ein moderner Online-Raum, um Live-Projekte, Code-Ästhetik und Nachweise transparent erlebbar zu machen.",
+    ansatz: "Vollständige Eigenentwicklung ohne Framework-Abhängigkeiten: Dynamisches <code>contentMap</code>- und <code>Overlay-Routing</code> ohne Seiten-Reloads, flüssige <code>Parallax</code>- und <code>Mauszeiger-Glow</code>-Tiefeneffekte sowie direkte <code>iframe</code>-PDF-Vorschau für Zeugnisse und Zertifikate. Strikte <code>DSGVO</code>-Konformität.",
+    ergebnis: "Ein dynamischer, visuell ansprechender persönlicher Hub mit flüssigen Parallax-Effekten &ndash; genau das Ergebnis, das ich von Anfang an als Ziel vor Augen hatte. Blitzschnelle Ladezeiten, null Wartungsaufwand und stabil auf <code>GitHub Pages</code> gehostet.",
+    rolle: "Vollständig eigene Vision, UI/UX-Konzeption und eigenverantwortliche Entwicklung von Grund auf: Semantische HTML5-Struktur, modulares CSS3-Design-System und ereignisgesteuerte JavaScript-Architektur.",
     tech: "HTML5, CSS3, JavaScript, Bootstrap, GitHub",
     status: "completed",
     github: "https://github.com/Goekss/Web-Portfolio"
   },
   {
     title: "CRMApp-Nova",
-    subtitle: "React SPA · JWT · REST-API",
+    subtitle: "React SPA · REST-API-Entkopplung · Kanban & JWT",
     images: [
       { src: "vistaperson.png", alt: "VISTA – Personenverwaltung im React-Frontend" },
       { src: "vistakanban.png", alt: "VISTA – Kanban-Board Ansicht" }
     ],
-    lead: "<strong>VISTA</strong> ist das React-Frontend zum bestehenden ASP.NET-CRM &ndash; ein praxisnahes Beispiel für saubere API-Trennung zwischen Backend und SPA.",
-    problem: "Das serverseitig gerenderte MVC-CRM war funktional, bot aber keine moderne Single-Page-Experience. Ziel: dasselbe Backend, neues Frontend &ndash; ohne die API anfassen zu müssen.",
-    ansatz: "React mit React Router für clientseitiges Routing, JWT-basierter Login direkt gegen die eigene REST-API. Kanban-Board als gezieltes State-Management-Training mit lokal gehaltenem Drag-&-Drop-Zustand.",
-    ergebnis: "Stabil funktionierender Login-Flow, vollständiges Personen-CRUD und Kanban-Board gegen die Live-API. Zeigt, wie eine bestehende Backend-Architektur ohne Anpassungen mit einem modernen Frontend kombiniert werden kann.",
-    rolle: "UI-Konzept, React-Implementierung, API-Integration und State-Architektur.",
+    lead: "Moderne React-SPA zur Entkopplung und Modernisierung des bestehenden ASP.NET-Backends (CrmAPP) &ndash; dynamische Datenverarbeitung über REST-Endpunkte und Kanban-Board.",
+    problem: "Klassisch serverseitig gerenderte MVC-Anwendungen bieten keine zeitgemäße, flüssige Single-Page-Experience. Die Herausforderung: Das bewährte Backend und die Datenlogik unverändert beizubehalten, während ein völlig entkoppeltes, reaktionsschnelles Frontend aufgesetzt wird.",
+    ansatz: "Decoupled Architecture: <code>React</code> mit <code>React Router</code> für clientseitiges Routing und <code>JWT</code>-Auth direkt gegen die eigene <code>ASP.NET Web API</code>. Vollständiges Personen-CRUD, gezieltes State-Management via Drag-&-Drop-<code>Kanban-Board</code> sowie Anbindung externer Schnittstellen wie <code>OpenWeatherMap</code>.",
+    ergebnis: "Stabile, hochperformante SPA, die beweist, wie ein bestehendes Enterprise-Backend ohne Refactoring mit einem modernen Frontend kombiniert werden kann. Modulare Komponentenstruktur, sofort einsatzbereit für Präsentationen.",
+    rolle: "Vollständig eigenes Frontend-Konzept und eigenständige Umsetzung: UI/UX-Design, komponentenbasierte React-Architektur, REST-API-Integration und State-Management.",
     tech: "React, React Router, JavaScript, HTML5, CSS3, JWT, REST APIs",
     status: "ongoing",
     github: "https://github.com/Goekss/CrmAppNova"
   },
   {
     title: "CRM-Anwendung",
-    subtitle: "IHK-Abschlussprojekt · Full-Stack · .NET",
+    subtitle: "IHK-Abschlussprojekt · Enterprise CRM · C# / ASP.NET",
     images: [
       { src: "crmlogin.png", alt: "CRM-Anwendung – Login mit Zwei-Faktor-Authentifizierung" },
       { src: "crmpanel.png", alt: "CRM-Anwendung – Admin-Dashboard" }
     ],
-    lead: "Vollständiges CRM-System für Kunden-, Mitarbeiter- und Projektverwaltung &ndash; unter IHK-Prüfungsbedingungen entwickelt und mit Note bestanden.",
-    problem: "Ein mittelständisches Unternehmen benötigt eine zentrale Verwaltungslösung mit klar definierten Rollen, nachvollziehbarem Reporting und sicherer Anmeldung &ndash; ohne externe SaaS-Abhängigkeit.",
-    ansatz: "ASP.NET MVC mit EF Core als solide Basis. Sicherheit: 2FA per SMS (<code>Twilio</code>) und E-Mail (<code>MailKit</code>). Datenexport: Excel und PDF. Dokumentierte REST-API für externe Anbindungen. Rollenmodell mit separaten Admin- und Mitarbeiter-Berechtigungen.",
-    ergebnis: "Abgenommene, lauffähige Anwendung mit vollständigem Auth-Flow, rollenbasiertem Dashboard und exportfähigem Reporting. Alle API-Endpunkte getestet und dokumentiert. Projekt wurde nach der Prüfung weiterentwickelt.",
-    rolle: "Eigenständige Umsetzung aller Schichten: Datenbankdesign, Backend-Logik, Authentifizierung, REST-API und Benutzeroberfläche.",
+    lead: "Zentrale Inhouse-Management-Plattform (Single Source of Truth) zur Konsolidierung verteilter Unternehmensdaten &ndash; konzipiert und entwickelt als offizielles IHK-Abschlussprojekt.",
+    problem: "Isolierte Datensilos (Excel-Tabellen, E-Mail-Notizen) führten zu Ineffizienzen, Kommunikationsverlusten und Datenschutzrisiken. Gefragt war eine maßgeschneiderte Inhouse-Lösung mit rollenbasierter Zugriffskontrolle &ndash; unabhängig von teuren SaaS-Enterprise-Lizenzen.",
+    ansatz: "Hybride Architektur: <code>ASP.NET MVC 5</code> mit <code>Entity Framework 6 (Code-First)</code> und integrierter <code>RESTful Web API</code> für moderne Clients (z.&nbsp;B. React). Praxisnahes Sicherheitskonzept: <code>2FA via MailKit</code>, automatischer <code>Brute-Force Lockout</code> nach 3 Fehlversuchen und <code>RBAC</code>. Interaktives Dashboard via <code>ApexCharts</code> und automatisierter Excel-Export via <code>ClosedXML</code>.",
+    ergebnis: "Erfolgreich abgenommenes, audit-sicheres Enterprise-System mit 4+ Kernmodulen. Kosteneffiziente In-House-Lösung: <code>ca. 42% Ersparnis</code> bei Lizenz- und Dienstleisterkosten. Bildet zugleich die solide API-Basis für das spätere React-Frontend (Vista).",
+    rolle: "Vollständig eigenverantwortliche Konzeption und Umsetzung aller Schichten von Grund auf: Relationales Datenbankdesign, Backend- und API-Architektur, Sicherheitsinfrastruktur sowie Benutzeroberfläche.",
     tech: "C#, ASP.NET MVC, Entity Framework Core, SQL Server, HTML5, CSS3, Bootstrap, JavaScript, jQuery, JWT, Twilio, MailKit, RESTful APIs, GitHub",
     status: "completed",
     github: "https://github.com/Goekss/CrmAPP"
   },
   {
     title: "Klinik Raum Stuttgart",
-    subtitle: "WinForms · C# · SQL Server",
+    subtitle: "Desktop-Praxissoftware · C# WinForms · MS SQL Server",
     images: [
       { src: "klinikall.png", alt: "Klinik Raum Stuttgart – Übersicht der Verwaltung" },
       { src: "klinik3.png", alt: "Klinik Raum Stuttgart – Detailansicht" }
     ],
-    lead: "Desktop-Verwaltungssystem für eine kleine Klinik &ndash; erstes ernsthaftes Projekt mit C# und relationaler Datenbank.",
-    problem: "Patienten- und Termindaten wurden manuell gepflegt. Gefragt war eine einfache Desktop-Anwendung mit stabiler Datenbindung und fehlertoleranter Eingabe.",
-    ansatz: "Windows Forms auf .NET Framework mit direkter SQL-Server-Anbindung. Klassische CRUD-Operationen mit Fokus auf sauberer Datenbindung zwischen UI-Komponenten und Datenbankschicht.",
-    ergebnis: "Vollständig funktionsfähige Anwendung mit Patienten-, Termin- und Raumverwaltung. Legt das Fundament für alle späteren .NET-Projekte &ndash; hier wurden Datenbankdesign und C#-Grundlagen unter realen Anforderungen gefestigt.",
-    rolle: "Eigenständige Umsetzung im Rahmen der Weiterbildung zum Fachinformatiker.",
+    lead: "Kompakte Desktop-Praxissoftware zur Digitalisierung des medizinischen Alltags &ndash; mit 3 rollenbasierten Arbeitsbereichen (Patient, Arzt, Sekretariat) und relationalem MS SQL Server.",
+    problem: "Manuelle Terminvergabe und unstrukturierte Patientenakten führten zu Terminüberschneidungen und hohem Abstimmungsaufwand. Gefragt war eine fehlertolerante Desktop-Lösung, die die spezifischen Anforderungen von Patienten, Ärzten und Praxispersonal in einer Anwendung bündelt.",
+    ansatz: "Rollenbasierte Desktop-Architektur mit <code>C# Windows Forms</code>: Drei spezialisierte Module für <code>Patienten</code> (Terminbuchung & Beschwerden), <code>Ärzte</code> (Tagesplan & Anamnese) und <code>Sekretariat</code> (Slot-Generierung, Abteilungs-CRUD & Rundschreiben). Direkte, transaktionssichere Datenanbindung mit parametrisierten Abfragen an den <code>Microsoft SQL Server</code>.",
+    ergebnis: "Ausgereifte Desktop-Praxissoftware, mit der <code>Arztpraxen und Kliniken</code> ihren gesamten Ablauf &ndash; von der Patientenaufnahme über die Terminvergabe bis zur Behandlungsübersicht (Arzt, Patient, Sekretariat) &ndash; reibungslos organisieren können. Bildete zugleich das fundierte Fundament für relationales Datenbankdesign und C#-Architektur.",
+    rolle: "Vollständig eigenständige Konzeption und Desktop-Entwicklung aller Schichten von Grund auf: Windows-Forms-UI-Design, relationale Datenzugriffsschicht und SQL-Server-Datenbankdesign.",
     tech: "C#, .NET Framework, Windows Forms, SQL Server, Visual Studio",
     status: "completed",
     github: "https://github.com/Goekss/Klinikum_Stuttgart"
   },
   {
     title: "Photo BLOG",
-    subtitle: "HTML · CSS · Mobile-First",
+    subtitle: "Pure CSS · Mobile-First · Grid & Flexbox",
     images: [
       { src: "perpage1.png", alt: "Photo Blog – Startseite mit Bildergalerie" },
       { src: "perpage2.png", alt: "Photo Blog – Responsive Mobilansicht" }
     ],
-    lead: "Responsives Frontend-Projekt mit Fokus auf sauberem Mobile-First-Layout &ndash; ohne ein einziges JavaScript-Framework.",
-    problem: "Eine visuell ansprechende Foto-Blog-Oberfläche, die auf allen Bildschirmgrößen konsistent wirkt und dabei den Fokus auf CSS-Grundlagen legt statt auf Framework-Magie.",
-    ansatz: "Mobile-First-Ansatz mit Media Queries, Flexbox und CSS Grid. Bewusst kein JavaScript-Framework, um ein tiefes Verständnis für Layout-Mechanismen aufzubauen.",
-    ergebnis: "Pixel-stabiles Layout von 320px bis 4K. Diente als direktes Fundament für alle späteren Frontends &ndash; die hier gelernten Layoutprinzipien sind in Vista.Core und GoAI sichtbar.",
-    rolle: "UI-Konzept, Layoutstruktur und vollständige CSS-Umsetzung.",
+    lead: "Responsives Fotoblog-Interface mit Fokus auf purem CSS-Layout-Handwerk &ndash; vollständig ohne Frameworks oder JavaScript-Abhängigkeiten realisiert.",
+    problem: "Viele moderne Frontends greifen selbst für elementare Layouts reflexartig zu schwergewichtigen UI-Frameworks. Ziel war es, ein pixelgenaues, visuell ansprechendes Galerie-Layout ausschließlich mit nativen CSS-Mechanismen zu konstruieren.",
+    ansatz: "Konsequenter <code>Mobile-First</code>-Ansatz mit fluiden <code>CSS Grid</code>- und <code>Flexbox</code>-Systemen. Eigene Breakpoint-Hierarchie, typografische Skalierung und Bildoptimierung ohne Zuhilfenahme externer CSS-Bibliotheken.",
+    ergebnis: "Pixel-stabiles, barrierefreies und extrem performantes Layout von <code>320px bis 4K</code>. Diente als fundierte handwerkliche Basis für alle späteren Frontends (wie Vista.CoreX und GoAI).",
+    rolle: "Vollständig eigenes Layoutkonzept, visuelle Bildkomposition und eigenständige Umsetzung mit semantischem <code>HTML5</code> und modernem <code>CSS3</code>.",
     tech: "HTML5, CSS3",
     status: "completed",
     github: "#"
