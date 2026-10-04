@@ -696,24 +696,20 @@ const contentMap = {
           <div class="card uber-mich">
              <img src="./img/DSC_0169_web.jpg" alt="Porträt von Onur Gökhan Bicer" class="profile-image" loading="lazy" />
 
-
             <h3 class="title">Über mich</h3>
+            <p class="subtitle" style="margin-top: -12px; margin-bottom: 20px; font-style: italic; color: var(--accent-light, #ffd54f);">Die Reise einer Leidenschaft</p>
 
-            <p>Hallo, mein Name ist Gökhan. Ich bin Full-Stack-Entwickler mit Schwerpunkt auf C#, ASP.NET, JavaScript und React. Mich motiviert es, fachliche Anforderungen in funktionierende Anwendungen zu übersetzen und dabei Schritt für Schritt saubere, nachvollziehbare Lösungen aufzubauen.</p>
+            <p>Hallo, ich bin Gökhan, Full-Stack-Softwareentwickler aus Stuttgart.</p>
 
-            <p>Mein Weg in die Softwareentwicklung war bewusst praxisorientiert. Nach ersten Studien- und Berufserfahrungen in Deutschland habe ich mich für eine Ausbildung im IT-Bereich entschieden und diese als IT-Anwendungsentwickler erfolgreich abgeschlossen. Seitdem arbeite ich daran, meine Backend-Kenntnisse zu vertiefen und gleichzeitig klare, verständliche Benutzeroberflächen zu entwickeln.</p>
+            <p>Mein Weg in die Softwareentwicklung war nicht der kürzeste, aber für mich der richtige. Nach meinem BWL-Studium in der Türkei habe ich mich entschieden, einer Leidenschaft zu folgen, die mich schon lange begleitet hat: dem Programmieren. Ich habe die Ärmel hochgekrempelt und angefangen zu lernen, Schritt für Schritt. Diese ersten Zeilen Code wurden zu den Grundbausteinen eines Weges, auf dem ich bis heute aufbaue.</p>
 
-            <p>In Projekten übernehme ich Verantwortung für Analyse, Umsetzung und Weiterentwicklung. Besonders wichtig sind mir strukturierte Arbeit, offene Kommunikation und die Bereitschaft, technische Entscheidungen nachvollziehbar zu begründen. Ich arbeite zuverlässig, nehme Feedback ernst und baue meine Fähigkeiten kontinuierlich aus.</p>
+            <p>2016 kam ich für die Universität Stuttgart nach Deutschland. In einem neuen Land bei null anzufangen war nicht leicht. Die ersten zwei Jahre verbrachte ich am Sprachzentrum der Universität und erreichte mit dem TestDaF das C1-Niveau. Danach begann ich ein BWL-Studium, zunächst an der Universität Stuttgart, später an der Hochschule Kempten. Parallel dazu arbeitete ich als Werkstudent bei Daimler in der Fahrzeugproduktion und lernte die deutsche Arbeitskultur aus nächster Nähe kennen.</p>
 
-            <p>Neben der Softwareentwicklung begleitet mich Musik seit vielen Jahren. Die Erfahrung als Gitarrist und zeitweise ehrenamtlicher Gitarrenlehrer hat meine Geduld, Konzentration und Fähigkeit gestärkt, komplexe Inhalte verständlich zu vermitteln.</p>
+            <p>Mit der Zeit wurde mir jedoch eines immer klarer: Ich wollte nicht nur verwalten, sondern selbst etwas aufbauen. Also traf ich eine bewusste Entscheidung für einen erfolgreichen Quereinstieg in die IT: Ich verließ die Hochschule, stellte meine Leidenschaft an die erste Stelle und begann eine duale Ausbildung zum Fachinformatiker für Anwendungsentwicklung, die ich 2025 mit dem IHK-Abschluss beendete. Diese Entscheidung war einer der mutigsten und zugleich richtigsten Schritte meines Lebens.</p>
 
-            <ul class="profile-points" aria-label="Arbeitsweise">
-              <li>Strukturierte Umsetzung statt Aktionismus</li>
-              <li>Offene Kommunikation bei Risiken und offenen Fragen</li>
-              <li>Verlässliche Übergabe von Arbeitsergebnissen</li>
-            </ul>
+            <p>Heute entwickle ich aus Leidenschaft als Freelancer moderne Software mit C#/.NET und React – von mandantenfähigen B2B-SaaS-Plattformen bis hin zu intelligenten KI-Assistenten. Mein BWL-Hintergrund hilft mir dabei, Software nicht nur technisch, sondern auch betriebswirtschaftlich und lösungsorientiert zu denken.</p>
 
-           
+            <p>Abseits des Bildschirms haben Musik und Menschen schon immer einen besonderen Platz in meinem Leben eingenommen. In der Vergangenheit habe ich Kindern Gitarrenunterricht gegeben, einen Seniorenchor geleitet und mich ehrenamtlich in der Kinder- und Jugendarbeit engagiert. Diese Erfahrungen haben mich Geduld, Verantwortung und vor allem aktives Zuhören gelehrt – Werte, die mir bis heute extrem wichtig sind. Auch heute spielt Musik eine zentrale Rolle in meinem Alltag: Mit meiner eigenen Band stehe ich regelmäßig auf der Bühne und gebe Live-Konzerte.</p>
           </div>
         `,
 
