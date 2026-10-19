@@ -1,4 +1,4 @@
-
+﻿
 /* =====================================================
    PROJECT TECH ICONS  ##013 05.02
    ===================================================== */
@@ -580,7 +580,7 @@ const projectsData = [
     lead: "Zentrale Inhouse-Management-Plattform (Single Source of Truth) zur Konsolidierung verteilter Unternehmensdaten &ndash; konzipiert und entwickelt als offizielles IHK-Abschlussprojekt.",
     problem: "Isolierte Datensilos (Excel-Tabellen, E-Mail-Notizen) führten zu Ineffizienzen, Kommunikationsverlusten und Datenschutzrisiken. Gefragt war eine maßgeschneiderte Inhouse-Lösung mit rollenbasierter Zugriffskontrolle &ndash; unabhängig von teuren SaaS-Enterprise-Lizenzen.",
     ansatz: "Hybride Architektur: <code>ASP.NET MVC 5</code> mit <code>Entity Framework 6 (Code-First)</code> und integrierter <code>RESTful Web API</code> für moderne Clients (z.&nbsp;B. React). Praxisnahes Sicherheitskonzept: <code>2FA via MailKit</code>, automatischer <code>Brute-Force Lockout</code> nach 3 Fehlversuchen und <code>RBAC</code>. Interaktives Dashboard via <code>ApexCharts</code> und automatisierter Excel-Export via <code>ClosedXML</code>.",
-    ergebnis: "Erfolgreich abgenommenes, audit-sicheres Enterprise-System mit 4+ Kernmodulen. Kosteneffiziente In-House-Lösung: <code>ca. 42% Ersparnis</code> bei Lizenz- und Dienstleisterkosten. Bildet zugleich die solide API-Basis für das spätere React-Frontend (Vista).",
+    ergebnis: "Erfolgreich abgenommenes, audit-sicheres Enterprise-System mit 4+ Kernmodulen. Kosteneffiziente In-House-Lösung: <code>ca. 18% Ersparnis</code> bei Lizenz- und Dienstleisterkosten. Bildet zugleich die solide API-Basis für das spätere React-Frontend (Vista).",
     rolle: "Vollständig eigenverantwortliche Konzeption und Umsetzung aller Schichten von Grund auf: Relationales Datenbankdesign, Backend- und API-Architektur, Sicherheitsinfrastruktur sowie Benutzeroberfläche.",
     tech: "C#, ASP.NET MVC, Entity Framework Core, SQL Server, HTML5, CSS3, Bootstrap, JavaScript, jQuery, JWT, Twilio, MailKit, RESTful APIs, GitHub",
     status: "completed",
