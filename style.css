@@ -1609,7 +1609,7 @@ body.overlay-open #menuToggle {
 }
 
 .project-content {
-  padding: 1.15rem 1.2rem 1.1rem;
+  padding: 0.95rem 1.05rem 0.95rem;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -1631,7 +1631,7 @@ body.overlay-open #menuToggle {
 }
 
 .project-desc {
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.5;
   opacity: 0.95;
   margin-bottom: 0.6rem;
@@ -1646,8 +1646,8 @@ body.overlay-open #menuToggle {
 /* ---- Strukturierte Projekt-Beschreibung (Problem / Ansatz / Ergebnis / Rolle) ---- */
 
 .project-lead {
-  font-size: 12.5px;
-  line-height: 1.55;
+  font-size: 11px;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.94);
   margin: 0 0 0.85rem;
   padding-bottom: 0.75rem;
@@ -1663,17 +1663,17 @@ body.overlay-open #menuToggle {
 .project-meta {
   display: flex;
   flex-direction: column;
-  gap: 0.55rem;
-  margin: 0 0 0.9rem;
+  gap: 0.45rem;
+  margin: 0 0 0.75rem;
   padding: 0;
 }
 
 .project-meta-row {
   display: grid;
   grid-template-columns: 82px 1fr;
-  gap: 0.7rem;
+  gap: 0.6rem;
   align-items: start;
-  padding: 0.5rem 0.65rem;
+  padding: 0.4rem 0.55rem;
   border-radius: 9px;
   background: rgba(255, 255, 255, 0.028);
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -1687,7 +1687,7 @@ body.overlay-open #menuToggle {
 }
 
 .project-meta-row dt {
-  font-size: 10.5px;
+  font-size: 9px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1698,8 +1698,8 @@ body.overlay-open #menuToggle {
 }
 
 .project-meta-row dd {
-  font-size: 12px;
-  line-height: 1.55;
+  font-size: 10.5px;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.92);
   margin: 0;
   text-align: left;
@@ -1708,7 +1708,7 @@ body.overlay-open #menuToggle {
 
 .project-meta-row dd code {
   font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
-  font-size: 11px;
+  font-size: 10px;
   padding: 1px 5px;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.07);
@@ -1720,8 +1720,8 @@ body.overlay-open #menuToggle {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  row-gap: 8px;
-  padding: 0.85rem 0.78rem;
+  row-gap: 6px;
+  padding: 0.6rem 0.6rem;
   column-gap: 4px;
   opacity: 1;
   margin-top: auto;
@@ -1735,15 +1735,15 @@ body.overlay-open #menuToggle {
 }
 
 .project-tech-icon {
-  font-size: 26px;
-  margin-right: 10px;
+  font-size: 21px;
+  margin-right: 8px;
   opacity: 1;
 }
 
 .project-tech-img {
-  width: 26px;
-  height: 26px;
-  margin-right: 10px;
+  width: 21px;
+  height: 21px;
+  margin-right: 8px;
   vertical-align: middle;
   filter: brightness(0) invert(1);
   opacity: 0.95;
@@ -1757,8 +1757,8 @@ body.overlay-open #menuToggle {
 
 .project-tech-fallback {
   color: #f0f0f0;
-  font-size: 10px;
-  margin-right: 10px;
+  font-size: 9px;
+  margin-right: 8px;
   display: inline-block;
 }
 
