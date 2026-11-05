@@ -1,0 +1,18 @@
+name: Deploy to Azure Storage
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Upload to Azure Storage
+        uses: azure/CLI@v2
+        with:
+          azcliversion: 2.60.0
+          inlineScript: |
+            az storage blob upload-batch --account-name onurgweb --connection-string "$AZURE_Connection_String" -d '$web' -s . --overwrite
+        env:
+          AZURE_Connection_String: ${{ secrets.AZURE_Connection_String }}
