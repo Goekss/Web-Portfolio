@@ -39,6 +39,8 @@ function renderProjectTechIcons() {
     "React Router": "devicon-reactrouter-plain colored",
     "React Router 7": "devicon-reactrouter-plain colored",
     "Axios": "devicon-axios-plain colored",
+    "Vitest": "devicon-vitest-plain colored",
+    "Postman": "devicon-postman-plain colored",
     "GitHub": "devicon-github-plain white",
     "GitHub Actions": "devicon-githubactions-plain",
     "Git": "devicon-git-plain colored",
@@ -76,7 +78,8 @@ function renderProjectTechIcons() {
     "Cursor": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://cursor.com&size=128",
     "GitHub Copilot": "https://cdn.simpleicons.org/githubcopilot/e8e8e8",
     "XAML": "https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_xaml.svg",
-    "Antigravity": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://antigravity.google&size=128"
+    "Antigravity": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://antigravity.google&size=128",
+    "DeepSeek": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.deepseek.com&size=128"
   };
 
   document.querySelectorAll(".project-tech").forEach(div => {
@@ -855,7 +858,7 @@ const contentMap = {
               <span class="comp-tab"><i class='bx bx-code-alt'></i><span class="comp-tab-name">Frontend</span></span>
               <div class="comp-body">
                 
-                <p class="competency-stack project-tech">HTML5, CSS3, Bootstrap, JavaScript, React, Vite, Blazor, React Router, Axios</p>
+                <p class="competency-stack project-tech">HTML5, CSS3, Tailwind CSS, Bootstrap, JavaScript, React, Vite, Blazor, React Router, Axios</p>
                 <p class="comp-desc">
                   <strong>Praktische Anwendung:</strong> SPA-Strukturen, Dashboard-Oberflächen,
                   responsive Layouts, State-Handling und API-Anbindung im Client.
@@ -867,7 +870,7 @@ const contentMap = {
               </div>
             </article>
 
-            <article class="competency-card comp-option">
+            <article class="competency-card comp-option comp-option--desktop">
               <span class="comp-tab"><i class='bx bx-desktop'></i><span class="comp-tab-name">Desktop</span></span>
               <div class="comp-body">
                 <p class="competency-stack project-tech">WPF, WinForms, XAML</p>
@@ -897,10 +900,10 @@ const contentMap = {
               </div>
             </article>
 
-            <article class="competency-card comp-option">
+            <article class="competency-card comp-option comp-option--testing">
               <span class="comp-tab"><i class='bx bx-test-tube'></i><span class="comp-tab-name">Testing</span></span>
               <div class="comp-body">
-                <p class="competency-stack project-tech">xUnit, Moq</p>
+                <p class="competency-stack project-tech">xUnit, Moq, Vitest, Postman</p>
                 <p class="comp-desc">
                   <strong>Praktische Anwendung:</strong> Unit-Tests mit xUnit,
                   Mocking von Abhängigkeiten mit Moq und testgetriebene Absicherung der Logik.
@@ -916,7 +919,7 @@ const contentMap = {
               <span class="comp-tab"><i class='bx bx-infinite'></i><span class="comp-tab-name">DevOps & Tools</span></span>
               <div class="comp-body">
                 
-                <p class="competency-stack project-tech">Visual Studio, Visual Studio Code, Cursor, GitHub Copilot, Antigravity, Docker, Azure, GitHub Actions, GitHub, Git, npm</p>
+                <p class="competency-stack project-tech">Visual Studio, Visual Studio Code, Cursor, GitHub Copilot, DeepSeek, Antigravity, Docker, Azure, GitHub Actions, GitHub, Git, npm</p>
                 <p class="comp-desc">
                   <strong>Praktische Anwendung:</strong> Versionskontrolle mit Git,
                   Containerisierung mit Docker, CI/CD-Workflows und nachvollziehbare Projektübergabe.

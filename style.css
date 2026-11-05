@@ -2185,7 +2185,7 @@ body.overlay-open #menuToggle {
   flex-direction: row;
   align-items: stretch;
   gap: 0.8rem;
-  height: 360px;
+  height: 380px;
   grid-template-columns: none;
 }
 
@@ -2241,7 +2241,7 @@ body.overlay-open #menuToggle {
 /* İç içerik (açılınca görünür) */
 .competency-grid--accordion .comp-body {
   height: 100%;
-  padding: 1.5rem 2.4rem 2.4rem;
+  padding: 2.4rem 2.4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2290,13 +2290,24 @@ body.overlay-open #menuToggle {
   grid-template-columns: repeat(6, 66px);
 }
 
+/* Desktop (3 öğe) ve Testing (4 öğe): tam satır için kendi kolon sayıları */
+.competency-grid--accordion .comp-option--desktop .comp-body .competency-stack.project-tech {
+  grid-template-columns: repeat(3, 66px);
+}
+
+.competency-grid--accordion .comp-option--testing .comp-body .competency-stack.project-tech {
+  grid-template-columns: repeat(4, 66px);
+}
+
 /* Icon + altına teknoloji adı */
 .tech-item {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   gap: 0.45rem;
   width: 66px;
+  align-self: flex-start;
 }
 
 .tech-label {
@@ -2322,6 +2333,19 @@ body.overlay-open #menuToggle {
   width: 40px;
   height: 40px;
   font-size: 40px;
+}
+
+/* Tarayıcılar arası tutarlı dikey hizalama */
+.competency-grid--accordion .comp-body .competency-stack .project-tech-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.competency-grid--accordion .comp-body .competency-stack .project-tech-img {
+  display: block;
+  object-fit: contain;
 }
 
 .competency-grid--accordion .comp-option:hover .comp-body .competency-stack.project-tech {
@@ -2502,6 +2526,11 @@ body.overlay-open #menuToggle {
   }
 
   .competency-grid--accordion .comp-option--devops .comp-body .competency-stack.project-tech {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .competency-grid--accordion .comp-option--desktop .comp-body .competency-stack.project-tech,
+  .competency-grid--accordion .comp-option--testing .comp-body .competency-stack.project-tech {
     grid-template-columns: repeat(4, 1fr);
   }
 
