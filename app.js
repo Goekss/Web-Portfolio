@@ -379,7 +379,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 /* ===== SECTIONS ===== */
 const sections = [
   { id: "uber-mich", title: "Über mich", desc: "Beruflicher Hintergrund und Arbeitsweise" },
-  { id: "fahigkeiten", title: "Lebenslauf & Dokumente", desc: "Unterlagen und Nachweise" },
   { id: "kompetenzen", title: "Kompetenzbereiche", desc: "Technologien mit praktischem Einsatzkontext" },
   { id: "projekte", title: "Entwicklung & Projekte", desc: "Softwareprojekte im Überblick" },
   { id: "kurs", title: "Weiterbildungen", desc: "Aktuelle Lernfelder und Fortbildungen" },
@@ -716,112 +715,6 @@ const contentMap = {
           </div>
         `,
 
-  /* ===== LEBENSLAUF ===== */
-  "fahigkeiten": `
-        <section class="docs-showcase">
-          <div class="docs-intro">
-            <h3 class="docs-title">Lebenslauf & Dokumente</h3>
-            <p class="docs-subtitle">
-              Diese Unterlagen geben einen klaren Überblick über meinen beruflichen Hintergrund,
-              meine Qualifikationen und meine praktische Erfahrung.
-            </p>
-          </div>
-
-          <div class="docs-grid">
-              <div class="pdf-wrapper doc-card">
-                <div class="doc-card-head">
-                  <h4 class="title">Lebenslauf</h4>
-                  <span class="doc-badge">PDF · 147 KB</span>
-                </div>
-                <iframe
-                  class="cv-pdf-frame"
-                  src="dokumente/lebenslauf/Lebenslauf.pdf#toolbar=0&navpanes=0&scrollbar=0"
-                  loading="lazy"
-                  title="Lebenslauf Vorschau"
-                ></iframe>
-                <a
-                  href="dokumente/lebenslauf/Lebenslauf.pdf"
-                  target="_blank"
-                  rel="noopener"
-                  class="pdf-open"
-                >
-                  PDF öffnen ↗
-                </a>
-             </div>
-
-              <div class="pdf-wrapper doc-card">
-                <div class="doc-card-head">
-                  <h4 class="title">Arbeitszeugnisse</h4>
-                  <span class="doc-badge">PDF · 1.9 MB</span>
-                </div>
-                <iframe
-                  class="cv-pdf-frame"
-                  src="dokumente/arbeitszeugnis/arbeitszeugnisse.pdf#toolbar=0&navpanes=0&scrollbar=0"
-                  loading="lazy"
-                  title="Arbeitszeugnisse Vorschau"
-                ></iframe>
-                <a
-                  href="dokumente/arbeitszeugnis/arbeitszeugnisse.pdf"
-                  target="_blank"
-                  rel="noopener"
-                  class="pdf-open"
-                >
-                  PDF öffnen ↗
-                </a>
-              </div>
-
-            <div class="pdf-wrapper doc-card">
-                <div class="doc-card-head">
-                  <h4 class="title">Schulische &amp; akademische Bildung</h4>
-                  <span class="doc-badge">PDF · 1.5 MB</span>
-                </div>
-                <iframe
-                  class="cv-pdf-frame"
-                  src="dokumente/schulische_akademische/Bildung.pdf#toolbar=0&navpanes=0&scrollbar=0"
-                  loading="lazy"
-                  title="Bildung Vorschau"
-                ></iframe>
-                <a
-                  href="dokumente/schulische_akademische/Bildung.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="pdf-open"
-                >
-                  PDF öffnen ↗
-                </a>
-              </div>
-
-            <div class="pdf-wrapper doc-card">
-                <div class="doc-card-head">
-                  <h4 class="title">Ehrenamtliche Nachweise</h4>
-                  <span class="doc-badge">PDF · 605 KB</span>
-                </div>
-                <iframe
-                  class="cv-pdf-frame"
-                  src="dokumente/ehrenamtlich/Ehrenamtliche+Nachweise_Onur_Gokhan_Bicer.pdf#toolbar=0&navpanes=0&scrollbar=0"
-                  loading="lazy"
-                  title="Ehrenamtliche Nachweise Vorschau"
-                ></iframe>
-                <a
-                  href="dokumente/ehrenamtlich/Ehrenamtliche+Nachweise_Onur_Gokhan_Bicer.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="pdf-open"
-                >
-                  PDF öffnen ↗
-                </a>
-              </div>
-          </div>
-
-          <p id="hinweis">
-            <span class="hinweis-inner">
-              Hinweis: Aus Sicherheitsgründen wurden bestimmte Dokumente nicht öffentlich hochgeladen.
-            </span>
-          </p>
-        </section>
-      `
-  ,
-
   /* ===== KOMPETENZBEREICHE ===== */
   "kompetenzen": `
         <section class="competency-showcase">
@@ -1150,7 +1043,6 @@ function setupOverlayCardReveal(type) {
 
   const selectors = {
     "uber-mich": ".uber-mich",
-    "fahigkeiten": ".docs-intro, .doc-card, #hinweis",
     "kompetenzen": ".competency-intro, .competency-card",
     "projekte": ".project-grid .project-card",
     "kurs": ".education-card",

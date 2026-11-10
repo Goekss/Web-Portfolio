@@ -26,8 +26,7 @@ Das Portfolio habe ich ganz bewusst ohne überflüssige Frameworks umgesetzt –
 ### ✨ Hauptmerkmale & Highlights
 
 - **⚡ Zero-Dependency & No-Build:** Keine Node-Module, kein Bundler, kein Compile-Schritt erforderlich. Direkt im Browser lauffähig und auf GitHub Pages gehostet.
-- **🎛️ Dynamische Content-Map & Overlay-Architektur:** Inhalte werden dynamisch aus einer zentralen Datenstruktur (`contentMap`) geladen. Das Vollbild-Overlay (`cvCardsWrapper`) ermöglicht detailreiche Projekt- und Dokumentansichten ohne Seiten-Reloads.
-- **📄 Integrierte Dokumenten- & PDF-Vorschau:** Direkte Voransicht von Lebenslauf, Arbeitszeugnissen, Bildungsnachweisen und ehrenamtlichen Zertifikaten via interaktiver `<iframe>`-Einbindung und Direkt-Download.
+- **🎛️ Dynamische Content-Map & Overlay-Architektur:** Inhalte werden dynamisch aus einer zentralen Datenstruktur (`contentMap`) geladen. Das Vollbild-Overlay (`cvCardsWrapper`) ermöglicht detailreiche Projektansichten ohne Seiten-Reloads.
 - **🎨 Modernes Dark-Mode & Glassmorphism Design:** Ästhetische Benutzeroberfläche mit sanften Farbverläufen, Unschärfe-Effekten (`backdrop-filter`) und dynamischem Mauszeiger-Glow (`--mouse-x`, `--mouse-y`).
 - **🎯 Phased Smooth Scrolling:** Eigene Scroll-Engine mit dreiphasiger kubischer Beschleunigung (`easeInCubic` & `easeOutCubic`) für ein natürliches Navigationsgefühl.
 - **🏷️ Automatisches Tech-Stack Icon-Mapping:** Dynamische Umwandlung von Technologie-Schlagwörtern in offizielle Devicon- und CDN-Vektor-Icons mit Fallback-Textbadges.
@@ -58,11 +57,6 @@ my-portfolio/
 ├── style.css           # Design-System, CSS-Variablen, Layouts, Animationen & Dark Mode
 ├── img/                # Profilbilder, Favicon und visuelle Branding-Assets
 ├── projekte/           # Hochauflösende Screenshots der Softwareprojekte
-├── dokumente/          # Strukturierte Nachweise und Zertifikate
-│   ├── lebenslauf/             # Aktueller tabellarischer Lebenslauf (PDF)
-│   ├── arbeitszeugnis/         # Qualifizierte Arbeitszeugnisse (PDF)
-│   ├── schulische_akademische/ # Schul- und Weiterbildungsnachweise (PDF)
-│   └── ehrenamtlich/           # Nachweise über ehrenamtliches Engagement (PDF)
 └── README.md           # Projektdokumentation (DE & TR)
 ```
 
@@ -143,11 +137,6 @@ my-portfolio/
 ├── style.css           # Tasarım sistemi, renk değişkenleri, responsive kurallar ve animasyonlar
 ├── img/                # Profil fotoğrafı, marka ve favicon görselleri
 ├── projekte/           # Yazılım projelerine ait yüksek çözünürlüklü ekran görüntüleri
-├── dokumente/          # Sertifikalar, referanslar ve belgeler
-│   ├── lebenslauf/             # Güncel CV / Özgeçmiş (PDF)
-│   ├── arbeitszeugnis/         # Çalışma referans belgeleri (PDF)
-│   ├── schulische_akademische/ # Diploma ve eğitim sertifikaları (PDF)
-│   └── ehrenamtlich/           # Gönüllülük ve topluluk belgeleri (PDF)
 └── README.md           # Kapsamlı proje dokümantasyonu (DE & TR)
 ```
 

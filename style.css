@@ -7,7 +7,7 @@
    04. Hero ....................... Startbereich
    05. Sections & Cards ........... cv-section, cv-content
    06. Overlay .................... Modal-Wrapper, Close-Btn
-   07. Über mich / Dokumente ...... uber-mich, docs-showcase
+   07. Über mich ................ uber-mich
    08. Footer ..................... Social Icons, Legal
    09. Project Cards .............. project-grid, meta, tech
    10. Kompetenzbereiche .......... Akkordeon, Icons
@@ -853,21 +853,6 @@ body:not(.open-menu)::before {
 
 
 
-/* =========================================================
-   FÄHIGKEITEN SECTION 
-   ========================================================= */
-
-.lebenslauf-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 2rem;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
 #cvCardContainer {
   display: flex;
   flex-wrap: wrap;
@@ -912,47 +897,6 @@ body:not(.open-menu)::before {
   font-weight: 600;
 }
 
-#cvCardContainer .pdf-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-  flex-grow: 1;
-}
-
-#cvCardContainer .pdf-wrapper iframe {
-  width: 100%;
-  height: 520px;
-  max-width: 100%;
-  display: block;
-  border-radius: 8px;
-  border: none;
-  overflow-x: hidden;
-}
-
-#cvCardContainer .pdf-open {
-  position: absolute;
-  bottom: -1px;
-  right: 10px;
-
-  backdrop-filter: blur(6px);
-  color: var(--accent);
-  font-size: 0.75rem;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  text-decoration: none;
-  opacity: 0;
-  transition: opacity 0.25s ease, transform 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
-#cvCardContainer .card:hover .pdf-open {
-  opacity: 1;
-
-
-}
-
 #cvCardContainer:hover .card {
   opacity: 0.35;
 }
@@ -965,40 +909,10 @@ body:not(.open-menu)::before {
 }
 
 /* =========================================================
-   HINWEIS BÖLÜMÜ
-   ========================================================= */
-
-#hinweis {
-  margin-top: 2rem;
-  text-align: center;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.hinweis-inner {
-  display: inline-block;
-  padding: 0.8rem 1.2rem;
-  background: rgba(168, 168, 168, 0.3);
-
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  color: var(--accent);
-  font-size: 1.07rem;
-  max-width: 90%;
-  backdrop-filter: blur(12px);
-}
-
-/* =========================================================
    RESPONSIVE – MOBILE 
    ========================================================= */
 
 @media (max-width: 768px) {
-  .lebenslauf-wrapper {
-    padding: 1rem;
-    overflow-x: hidden;
-  }
-
   #cvCardContainer {
     flex-direction: column;
     align-items: center;
@@ -1019,213 +933,6 @@ body:not(.open-menu)::before {
     overflow-x: hidden;
   }
 
-  .hinweis-inner {
-    font-size: 0.75rem;
-    padding: 0.6rem 1rem;
-  }
-
-}
-
-/* =========================================================
-   PREMIUM DOCUMENT SHOWCASE
-   ========================================================= */
-
-#cvCardContainer .docs-showcase {
-  width: min(1180px, 100%);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1.3rem;
-}
-
-#cvCardContainer .docs-intro {
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background:
-    radial-gradient(circle at top right, rgba(255, 193, 7, 0.18), rgba(255, 193, 7, 0) 45%),
-    linear-gradient(155deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));
-  border-radius: 18px;
-  padding: 1.5rem 1.6rem;
-  backdrop-filter: blur(5px);
-}
-
-#cvCardContainer .docs-title {
-  color: var(--accent);
-  margin-bottom: 0.5rem;
-  font-size: 1.3rem;
-  letter-spacing: 0.2px;
-}
-
-#cvCardContainer .docs-subtitle {
-  color: rgba(255, 255, 255, 0.86);
-  line-height: 1.55;
-  font-size: 0.92rem;
-  max-width: 70ch;
-}
-
-#cvCardContainer .docs-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
-  gap: 1.2rem;
-}
-
-#cvCardContainer .docs-showcase .doc-card {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 645px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 16px;
-  padding: 1rem;
-  background:
-    linear-gradient(160deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04)),
-    rgba(10, 10, 10, 0.58);
-  backdrop-filter: blur(4px);
-  overflow: hidden;
-  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
-}
-
-#cvCardContainer .docs-showcase .doc-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  border: 1px solid rgba(255, 193, 7, 0.12);
-  pointer-events: none;
-}
-
-#cvCardContainer .docs-showcase .doc-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(255, 193, 7, 0.35);
-  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.45);
-}
-
-#cvCardContainer:hover .docs-showcase .doc-card {
-  opacity: 1;
-}
-
-#cvCardContainer .docs-showcase .doc-card-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.8rem;
-  margin-bottom: 0.9rem;
-}
-
-#cvCardContainer .docs-showcase .doc-card .title {
-  margin: 0;
-  font-size: 1rem;
-  color: #fff;
-}
-
-#cvCardContainer .docs-showcase .doc-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.68rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #101010;
-  background: var(--accent);
-  border-radius: 999px;
-  padding: 0.3rem 0.7rem;
-  font-weight: 700;
-}
-
-#cvCardContainer .docs-showcase .pdf-wrapper {
-  position: relative;
-  flex-grow: 1;
-  border: 1px solid rgba(255, 255, 255, 0.17);
-  border-radius: 12px;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.04);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
-}
-
-#cvCardContainer .docs-showcase .pdf-wrapper iframe {
-  width: 100%;
-  height: 560px;
-  border: 0;
-  filter: saturate(1.02) contrast(1.02);
-}
-
-#cvCardContainer .docs-showcase .pdf-open {
-  right: 12px;
-  bottom: 12px;
-  opacity: 1;
-  padding: 0.46rem 0.82rem;
-  font-size: 0.74rem;
-  font-weight: 600;
-  color: #161616;
-  background: var(--accent);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 999px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
-  transform: translateY(0);
-}
-
-#cvCardContainer .docs-showcase .pdf-open:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.06);
-}
-
-#cvCardContainer .docs-showcase #hinweis {
-  margin-top: 0.4rem;
-}
-
-#cvCardContainer .docs-showcase .hinweis-inner {
-  font-size: 0.88rem;
-  border-radius: 999px;
-  padding: 0.7rem 1.1rem;
-  color: #ffe08b;
-  background: rgba(255, 193, 7, 0.12);
-  border-color: rgba(255, 193, 7, 0.35);
-}
-
-@media (max-width: 1100px) {
-  #cvCardContainer .docs-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  #cvCardContainer .docs-intro {
-    padding: 1.2rem 1rem;
-  }
-
-  #cvCardContainer .docs-title {
-    font-size: 1.12rem;
-  }
-
-  #cvCardContainer .docs-subtitle {
-    font-size: 0.84rem;
-  }
-
-  #cvCardContainer .docs-showcase .doc-card {
-    min-height: auto;
-  }
-
-  #cvCardContainer .docs-showcase .doc-card-head {
-    flex-wrap: wrap;
-    gap: 0.4rem;
-  }
-
-  #cvCardContainer .docs-showcase .doc-card .title {
-    font-size: 0.92rem;
-  }
-
-  #cvCardContainer .docs-showcase .doc-badge {
-    font-size: 0.6rem;
-    padding: 0.22rem 0.55rem;
-  }
-
-  #cvCardContainer .docs-showcase .pdf-wrapper iframe {
-    height: 420px;
-  }
-
-  #cvCardContainer .docs-showcase .hinweis-inner {
-    font-size: 0.75rem;
-    border-radius: 12px;
-  }
 }
 
 /* =========================================================
@@ -3464,7 +3171,6 @@ input:-webkit-autofill{
   }
 
   .card.uber-mich,
-  .docs-showcase .doc-card,
   .education-card,
   .kontakt-card {
     width: 100%;
@@ -3477,8 +3183,7 @@ input:-webkit-autofill{
   }
 
   .project-content,
-  .education-card,
-  .doc-card {
+  .education-card {
     padding-inline: 1rem;
   }
 
@@ -3842,7 +3547,7 @@ input:-webkit-autofill{
 @media (min-width: 769px) {
   :root {
     --sidebar-w: 60px;
-    --sidebar-w-open: 150px;
+    --sidebar-w-open: 170px;
     --sidebar-ease: cubic-bezier(0.22, 1, 0.36, 1);
   }
 
@@ -4027,7 +3732,7 @@ input:-webkit-autofill{
 
   .topbar:hover .nav-label,
   .topbar:focus-within .nav-label {
-    max-width: 120px;
+    max-width: 140px;
     opacity: 1;
     transform: translateX(0);
     transition-delay: 0.06s;
