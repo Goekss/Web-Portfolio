@@ -519,7 +519,8 @@ const projectsData = [
     rolle: "Eigenverantwortliche Konzeption und Full-Stack-Umsetzung: API- und Datenmodellierung in .NET 9, RAG-Pipeline-Integration sowie modulare Frontend-Entwicklung in React.",
     tech: "C#, ASP.NET Core, EF Core, SQL Server, JavaScript, React, Vite, Axios, Bootstrap, Swagger, Redis, Docker, Azure, xUnit, GitHub Actions, SignalR, JWT, Recharts, Ollama, Qdrant, Semantic Kernel",
     status: "ongoing",
-    github: "https://github.com/Goekss/Vista.CoreX"
+    github: "https://github.com/Goekss/Vista.CoreX",
+    kategorie: "ki-saas"
   },
   {
     title: "GoAI ChatLab",
@@ -538,7 +539,8 @@ const projectsData = [
     rolle: "Vollständig eigenes Konzept und eigenverantwortliche Full-Stack-Entwicklung von Grund auf: <code>React 19</code> Frontend (Glassmorphism), zustandsloser <code>Express-Proxy</code>, clientseitige Parsing-Pipeline und CI/CD-Deployment.",
     tech: "React, Node.js, Express.js, JavaScript, HTML5, CSS3, GitHub Actions, Docker, REST APIs, Client-side File Parsing, OpenRouter AI",
     status: "completed",
-    github: "https://github.com/Goekss/GoAI-ChatLab"
+    github: "https://github.com/Goekss/GoAI-ChatLab",
+    kategorie: "ki-saas"
   },
   {
     title: "Portfolio Website",
@@ -554,7 +556,8 @@ const projectsData = [
     rolle: "Vollständig eigene Vision, UI/UX-Konzeption und eigenverantwortliche Entwicklung von Grund auf: Semantische HTML5-Struktur, modulares CSS3-Design-System und ereignisgesteuerte JavaScript-Architektur.",
     tech: "HTML5, CSS3, JavaScript, Bootstrap, GitHub",
     status: "completed",
-    github: "https://github.com/Goekss/Web-Portfolio"
+    github: "https://github.com/Goekss/Web-Portfolio",
+    kategorie: "web-design"
   },
   {
     title: "CRMApp-Nova",
@@ -570,7 +573,8 @@ const projectsData = [
     rolle: "Vollständig eigenes Frontend-Konzept und eigenständige Umsetzung: UI/UX-Design, komponentenbasierte React-Architektur, REST-API-Integration und State-Management.",
     tech: "React, React Router, JavaScript, HTML5, CSS3, JWT, REST APIs",
     status: "ongoing",
-    github: "https://github.com/Goekss/CrmAppNova"
+    github: "https://github.com/Goekss/CrmAppNova",
+    kategorie: "business-crm"
   },
   {
     title: "CRM-Anwendung",
@@ -586,7 +590,22 @@ const projectsData = [
     rolle: "Vollständig eigenverantwortliche Konzeption und Umsetzung aller Schichten von Grund auf: Relationales Datenbankdesign, Backend- und API-Architektur, Sicherheitsinfrastruktur sowie Benutzeroberfläche.",
     tech: "C#, ASP.NET MVC, Entity Framework Core, SQL Server, HTML5, CSS3, Bootstrap, JavaScript, jQuery, JWT, Twilio, MailKit, RESTful APIs, GitHub",
     status: "completed",
-    github: "https://github.com/Goekss/CrmAPP"
+    github: "https://github.com/Goekss/CrmAPP",
+    kategorie: "business-crm"
+  },
+  {
+    title: "PLC-OptiFlow",
+    subtitle: "WPF HMI · gRPC Backend · PLC-Simulation",
+    images: [],
+    lead: "Modernes WPF-HMI für ein simuliertes Kessel-System &ndash; als Portfolio-Referenz gebaut. Fokus auf wenige, aber vollständig funktionierende Funktionen: Live-Temperatur, Trend, Alarme und Handbetrieb in einem industriellen Dashboard.",
+    problem: "Industrielle Bedienoberflächen (HMI) sind oft teuer und schwer testbar. Gefragt war eine saubere Referenz, die zeigt, wie ein WPF-Client per gRPC mit einem unabhängigen Backend kommuniziert &ndash; inklusive realistischem Prozessmodell statt starrer Demo-Daten.",
+    ansatz: "Klare Schichtentrennung: Der <code>MVVM</code>-WPF-Client spricht ausschließlich über <code>IPlcService</code> mit dem Backend. Ein <code>FallbackPlcService</code> wechselt automatisch in den Simulationsmodus, wenn das gRPC-Backend nicht erreichbar ist. Das Backend simuliert die Kesselphysik (Heizung &rarr; Temperatur steigt) und leitet Alarme direkt aus der Temperatur ab.",
+    ergebnis: "Vollständig funktionierendes HMI mit Übersicht, Handbetrieb, Alarmen und Einstellungen &ndash; Physik und Alarmlogik durch xUnit-Tests abgesichert. Bereit für die nächste Roadmap-Stufe: SignalR-Web-Monitoring und echte TwinCAT-3-ADS-Anbindung.",
+    rolle: "Eigenverantwortliche Konzeption und Full-Stack-Umsetzung: Architektur, gRPC-Schnittstelle (plc.proto), Kessel-Simulation, MVVM-UI und Tests.",
+    tech: "C#, .NET, WPF, XAML, MVVM (CommunityToolkit.Mvvm), ASP.NET Core, gRPC, Protobuf, xUnit",
+    status: "ongoing",
+    github: "https://github.com/Goekss/PLC-OptiFlow",
+    kategorie: "industrie-desktop"
   },
   {
     title: "Klinik Raum Stuttgart",
@@ -602,7 +621,8 @@ const projectsData = [
     rolle: "Vollständig eigenständige Konzeption und Desktop-Entwicklung aller Schichten von Grund auf: Windows-Forms-UI-Design, relationale Datenzugriffsschicht und SQL-Server-Datenbankdesign.",
     tech: "C#, .NET Framework, Windows Forms, SQL Server, Visual Studio",
     status: "completed",
-    github: "https://github.com/Goekss/Klinikum_Stuttgart"
+    github: "https://github.com/Goekss/Klinikum_Stuttgart",
+    kategorie: "industrie-desktop"
   },
   {
     title: "Photo BLOG",
@@ -618,12 +638,16 @@ const projectsData = [
     rolle: "Vollständig eigenes Layoutkonzept, visuelle Bildkomposition und eigenständige Umsetzung mit semantischem <code>HTML5</code> und modernem <code>CSS3</code>.",
     tech: "HTML5, CSS3",
     status: "completed",
-    github: "#"
+    github: "#",
+    kategorie: "web-design"
   }
 ];
 
 /* ===== PROJEKTE: RENDER ===== */
 function renderProjectImages(images) {
+  if (!images || images.length === 0) {
+    return `<div class="project-image-empty" aria-hidden="true"><i class='bx bx-image-add'></i><span>Screenshots folgen</span></div>`;
+  }
   return images.map(img => `
     <a href="projekte/${img.src}" target="_blank">
       <img src="projekte/${img.src}" alt="${img.alt}" loading="lazy">
@@ -669,7 +693,7 @@ function renderProjectCard(p) {
     </div>`).join("");
 
   return `
-  <div class="project-card">
+  <div class="project-card" data-kategorie="${p.kategorie || ""}">
     <div class="project-image">${renderProjectImages(p.images)}</div>
     <div class="project-content">
       ${renderProjectTopMeta(p)}
@@ -685,9 +709,46 @@ function renderProjectCard(p) {
   </div>`;
 }
 
-function buildProjectsHTML() {
-  return `<div class="project-grid">${projectsData.map(renderProjectCard).join("")}</div>`;
+function buildProjectFilterHTML() {
+  const filters = [
+    { id: "alle", label: "Alle" },
+    { id: "ki-saas", label: "KI &amp; SaaS" },
+    { id: "business-crm", label: "Business &amp; CRM" },
+    { id: "industrie-desktop", label: "Industrie &amp; Desktop" },
+    { id: "web-design", label: "Web &amp; Design" }
+  ];
+  return `
+    <div class="project-filter" role="tablist" aria-label="Projekte nach Kategorie filtern">
+      ${filters.map((f, i) => `
+        <button type="button" class="project-filter-btn${i === 0 ? " is-active" : ""}" data-filter="${f.id}" role="tab" aria-selected="${i === 0}">${f.label}</button>`).join("")}
+    </div>`;
 }
+
+function buildProjectsHTML() {
+  return `<div class="project-layout">${buildProjectFilterHTML()}<div class="project-grid">${projectsData.map(renderProjectCard).join("")}</div></div>`;
+}
+
+function applyProjectFilter(filter) {
+  const cards = dom.container.querySelectorAll(".project-grid .project-card");
+  cards.forEach(card => {
+    const match = filter === "alle" || card.dataset.kategorie === filter;
+    card.classList.toggle("project-card--hidden", !match);
+  });
+
+  dom.container.querySelectorAll(".project-filter-btn").forEach(btn => {
+    const active = btn.dataset.filter === filter;
+    btn.classList.toggle("is-active", active);
+    btn.setAttribute("aria-selected", String(active));
+  });
+
+  setupProjectsProgress();
+}
+
+document.addEventListener("click", e => {
+  const btn = e.target.closest(".project-filter-btn");
+  if (!btn) return;
+  applyProjectFilter(btn.dataset.filter);
+});
 
 /* ===== CONTENT MAP ===== */
 const contentMap = {
@@ -969,7 +1030,8 @@ function setupProjectsProgress() {
     projectsProgressCleanup = null;
   }
 
-  const cards = Array.from(dom.container.querySelectorAll(".project-grid .project-card"));
+  const cards = Array.from(dom.container.querySelectorAll(".project-grid .project-card"))
+    .filter(card => !card.classList.contains("project-card--hidden"));
   if (!cards.length) return;
 
   const scroller = dom.wrapper;

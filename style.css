@@ -1198,6 +1198,76 @@ body.overlay-open #menuToggle {
 /* PROJECT CARDS */
 /* ============================= */
 
+.project-layout {
+  width: 100%;
+}
+
+.project-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.project-filter-btn {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  max-width: 70%;
+  padding: 0.30rem 1.0rem;
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.project-filter-btn:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.project-filter-btn.is-active {
+  background: var(--accent, #ffc107);
+  border-color: var(--accent, #ffc107);
+  color: #111;
+  font-weight: 600;
+}
+
+@media (min-width: 769px) {
+  .project-layout {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .project-filter {
+    position: sticky;
+    top: 1.5rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .project-filter-btn {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+.project-card--hidden {
+  display: none;
+}
+
+#cvCardContainer .project-grid .project-card.project-card--hidden {
+  display: none;
+}
+
 .project-card {
   position: relative;
   background:
@@ -1281,6 +1351,23 @@ body.overlay-open #menuToggle {
   padding: 8px;
   border-bottom: none;
   border-right: none;
+}
+
+.project-image-empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+  border-radius: 11px;
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 0.85rem;
+}
+
+.project-image-empty i {
+  font-size: 2rem;
 }
 
 .project-image a {
@@ -1766,6 +1853,17 @@ body.overlay-open #menuToggle {
     font-size: 0.72rem;
     opacity: 0.75;
     margin-top: 2px;
+  }
+
+  .project-filter {
+    gap: 0.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .project-filter-btn {
+    flex: 0 0 auto;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
   }
 
   .project-desc {
