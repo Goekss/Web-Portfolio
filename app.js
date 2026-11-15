@@ -596,14 +596,17 @@ const projectsData = [
   {
     title: "PLC-OptiFlow",
     subtitle: "WPF HMI · gRPC Backend · PLC-Simulation",
-    images: [],
+    images: [
+      {src: "PlcHmi1.png", alt: "PLC-OptiFlow – Übersicht des Kessel-Dashboards" },
+      {src: "PlcHmi2.png", alt: "PLC-OptiFlow – Trenddiagramm der Live-Temperatur" }
+    ],
     lead: "Modernes WPF-HMI für ein simuliertes Kessel-System &ndash; als Portfolio-Referenz gebaut. Fokus auf wenige, aber vollständig funktionierende Funktionen: Live-Temperatur, Trend, Alarme und Handbetrieb in einem industriellen Dashboard.",
     problem: "Industrielle Bedienoberflächen (HMI) sind oft teuer und schwer testbar. Gefragt war eine saubere Referenz, die zeigt, wie ein WPF-Client per gRPC mit einem unabhängigen Backend kommuniziert &ndash; inklusive realistischem Prozessmodell statt starrer Demo-Daten.",
     ansatz: "Klare Schichtentrennung: Der <code>MVVM</code>-WPF-Client spricht ausschließlich über <code>IPlcService</code> mit dem Backend. Ein <code>FallbackPlcService</code> wechselt automatisch in den Simulationsmodus, wenn das gRPC-Backend nicht erreichbar ist. Das Backend simuliert die Kesselphysik (Heizung &rarr; Temperatur steigt) und leitet Alarme direkt aus der Temperatur ab.",
     ergebnis: "Vollständig funktionierendes HMI mit Übersicht, Handbetrieb, Alarmen und Einstellungen &ndash; Physik und Alarmlogik durch xUnit-Tests abgesichert. Bereit für die nächste Roadmap-Stufe: SignalR-Web-Monitoring und echte TwinCAT-3-ADS-Anbindung.",
     rolle: "Eigenverantwortliche Konzeption und Full-Stack-Umsetzung: Architektur, gRPC-Schnittstelle (plc.proto), Kessel-Simulation, MVVM-UI und Tests.",
     tech: "C#, .NET, WPF, XAML, MVVM (CommunityToolkit.Mvvm), ASP.NET Core, gRPC, Protobuf, xUnit",
-    status: "ongoing",
+    status: "completed",
     github: "https://github.com/Goekss/PLC-OptiFlow",
     kategorie: "industrie-desktop"
   },
