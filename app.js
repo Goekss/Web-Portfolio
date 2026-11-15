@@ -605,7 +605,7 @@ const projectsData = [
     ansatz: "Klare Schichtentrennung: Der <code>MVVM</code>-WPF-Client spricht ausschließlich über <code>IPlcService</code> mit dem Backend. Ein <code>FallbackPlcService</code> wechselt automatisch in den Simulationsmodus, wenn das gRPC-Backend nicht erreichbar ist. Das Backend simuliert die Kesselphysik (Heizung &rarr; Temperatur steigt) und leitet Alarme direkt aus der Temperatur ab.",
     ergebnis: "Vollständig funktionierendes HMI mit Übersicht, Handbetrieb, Alarmen und Einstellungen &ndash; Physik und Alarmlogik durch xUnit-Tests abgesichert. Bereit für die nächste Roadmap-Stufe: SignalR-Web-Monitoring und echte TwinCAT-3-ADS-Anbindung.",
     rolle: "Eigenverantwortliche Konzeption und Full-Stack-Umsetzung: Architektur, gRPC-Schnittstelle (plc.proto), Kessel-Simulation, MVVM-UI und Tests.",
-    tech: "C#, .NET, WPF, XAML, MVVM (CommunityToolkit.Mvvm), ASP.NET Core, gRPC, Protobuf, xUnit",
+    tech: "C#, .NET, WPF, XAML, MVVM (CommunityToolkit.Mvvm), Visual Studio, ASP.NET Core, gRPC, Protobuf, xUnit",
     status: "completed",
     github: "https://github.com/Goekss/PLC-OptiFlow",
     kategorie: "industrie-desktop"
