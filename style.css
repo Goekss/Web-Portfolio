@@ -1529,14 +1529,14 @@ body.overlay-open #menuToggle {
 }
 
 .project-tech-icon {
-  font-size: 21px;
+  font-size: 1.8rem;
   margin-right: 8px;
   opacity: 1;
 }
 
 .project-tech-img {
-  width: 21px;
-  height: 21px;
+  width: 1.8rem;
+  height: 1.8rem;
   margin-right: 8px;
   vertical-align: middle;
   filter: brightness(0) invert(1);
@@ -1551,7 +1551,7 @@ body.overlay-open #menuToggle {
 
 .project-tech-fallback {
   color: #f0f0f0;
-  font-size: 9px;
+  font-size: 0.8rem;
   margin-right: 8px;
   display: inline-block;
 }

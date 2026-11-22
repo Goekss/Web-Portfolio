@@ -16,7 +16,7 @@ function renderProjectTechIcons() {
     "npm": "devicon-npm-plain colored",
     "C#": "devicon-csharp-plain colored",
     "ASP.NET MVC": "devicon-dot-net-plain colored",
-    "ASP.NET": "devicon-dot-net-plain-wordmark colored",
+    
     "ASP.NET Core": "devicon-dotnetcore-plain colored",
     "EF Core": "devicon-entityframeworkcore-plain colored",
     "Entity Framework": "devicon-entityframeworkcore-plain colored",
@@ -25,8 +25,10 @@ function renderProjectTechIcons() {
     "WPF": "devicon-dot-net-plain colored",
     "WinForms": "devicon-csharp-plain colored",
     "XAML": "",
+    "gRPC":"devicon-grpc-plain",
     "Twilio": "devicon-twilio-plain colored",
     "Mysql": "devicon-mysql-original colored",
+    
 
     "SQL": "devicon-microsoftsqlserver-plain colored",
     "SQL Server": "devicon-microsoftsqlserver-plain colored",
@@ -79,7 +81,10 @@ function renderProjectTechIcons() {
     "GitHub Copilot": "https://cdn.simpleicons.org/githubcopilot/e8e8e8",
     "XAML": "https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_xaml.svg",
     "Antigravity": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://antigravity.google&size=128",
-    "DeepSeek": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.deepseek.com&size=128"
+    "DeepSeek": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.deepseek.com&size=128",
+    ".NET": "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/microsoft-dotnet/default.svg",
+    "gRPC" : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css",
+    "TypeScript":"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
   };
 
   document.querySelectorAll(".project-tech").forEach(div => {
@@ -500,6 +505,7 @@ dom.topbar.querySelector(".logo")?.addEventListener("click", () => {
   closeMenu();
 });
 
+
 /* ===== PROJEKTE: DATEN ===== */
 const projectsData = [
   {
@@ -517,7 +523,7 @@ const projectsData = [
     ansatz: "Privacy-by-Design: Lokale Inferenz über <code>Ollama</code> und <code>Qdrant</code>, orchestriert via <code>Semantic Kernel</code>. Das Backend erzwingt strikte Mandantentrennung direkt über globale EF Core Query Filter. Entkoppelte React-SPA mit SignalR-WebSockets für Echtzeit-Interaktion.",
     ergebnis: "Funktionsfähige SaaS-Basis mit 10+ Fachmodulen (Kunden, Tickets, Projekte, Chat). Mandanten-Isolation durch 6 xUnit-Integrationstests abgesichert. Vollständig per Docker Compose reproduzierbar &ndash; die Datenverarbeitung bleibt lokal im Haus.",
     rolle: "Eigenverantwortliche Konzeption und Full-Stack-Umsetzung: API- und Datenmodellierung in .NET 9, RAG-Pipeline-Integration sowie modulare Frontend-Entwicklung in React.",
-    tech: "C#, ASP.NET Core, EF Core, SQL Server, JavaScript, React, Vite, Axios, Bootstrap, Swagger, Redis, Docker, Azure, xUnit, GitHub Actions, SignalR, JWT, Recharts, Ollama, Qdrant, Semantic Kernel",
+    tech: "C#, .NET, EF Core, SQL Server, JavaScript, React, Vite, Axios, Bootstrap, Swagger, Redis, Docker, Azure, xUnit, GitHub Actions, SignalR, JWT, Recharts, Ollama, Qdrant, Semantic Kernel",
     status: "ongoing",
     github: "https://github.com/Goekss/Vista.CoreX",
     kategorie: "ki-saas"
@@ -537,7 +543,7 @@ const projectsData = [
     ansatz: "Freier KI-Zugang ohne Abo: Intelligente Bündelung leistungsfähiger <code>OpenRouter</code>-Modelle (Llama, Qwen, StepFun) in einer einheitlichen Oberfläche. Client-side Parsing (<code>PDF, Word, Excel, Vision</code>) hält das Backend schlank und eliminiert Serverkosten; der <code>Express-Proxy</code> schützt sensible API-Keys.",
     ergebnis: "Frei zugängliche, multimodale Open-Source-Lösung für jedermann: Keine Paywalls, keine Abos &ndash; das Geld bleibt im Geldbeutel! Minimaler Server-Footprint und automatisiert per CI/CD auf <code>GitHub Pages</code> bereitgestellt.",
     rolle: "Vollständig eigenes Konzept und eigenverantwortliche Full-Stack-Entwicklung von Grund auf: <code>React 19</code> Frontend (Glassmorphism), zustandsloser <code>Express-Proxy</code>, clientseitige Parsing-Pipeline und CI/CD-Deployment.",
-    tech: "React, Node.js, Express.js, JavaScript, HTML5, CSS3, GitHub Actions, Docker, REST APIs, Client-side File Parsing, OpenRouter AI",
+    tech: "React, Node.js, Express.js, JavaScript,TypeScript, HTML5, CSS3, GitHub Actions, Docker, REST APIs, Client-side File Parsing, OpenRouter AI",
     status: "completed",
     github: "https://github.com/Goekss/GoAI-ChatLab",
     kategorie: "ki-saas"
@@ -554,7 +560,7 @@ const projectsData = [
     ansatz: "Vollständige Eigenentwicklung ohne Framework-Abhängigkeiten: Dynamisches <code>contentMap</code>- und <code>Overlay-Routing</code> ohne Seiten-Reloads, flüssige <code>Parallax</code>- und <code>Mauszeiger-Glow</code>-Tiefeneffekte sowie direkte <code>iframe</code>-PDF-Vorschau für Zeugnisse und Zertifikate. Strikte <code>DSGVO</code>-Konformität.",
     ergebnis: "Ein dynamischer, visuell ansprechender persönlicher Hub mit flüssigen Parallax-Effekten &ndash; genau das Ergebnis, das ich von Anfang an als Ziel vor Augen hatte. Blitzschnelle Ladezeiten, null Wartungsaufwand und stabil auf <code>GitHub Pages</code> gehostet.",
     rolle: "Vollständig eigene Vision, UI/UX-Konzeption und eigenverantwortliche Entwicklung von Grund auf: Semantische HTML5-Struktur, modulares CSS3-Design-System und ereignisgesteuerte JavaScript-Architektur.",
-    tech: "HTML5, CSS3, JavaScript, Bootstrap, GitHub",
+    tech: "HTML5, CSS3, JavaScript, Bootstrap, GitHub Actions",
     status: "completed",
     github: "https://github.com/Goekss/Web-Portfolio",
     kategorie: "web-design"
@@ -588,24 +594,24 @@ const projectsData = [
     ansatz: "Hybride Architektur: <code>ASP.NET MVC 5</code> mit <code>Entity Framework 6 (Code-First)</code> und integrierter <code>RESTful Web API</code> für moderne Clients (z.&nbsp;B. React). Praxisnahes Sicherheitskonzept: <code>2FA via MailKit</code>, automatischer <code>Brute-Force Lockout</code> nach 3 Fehlversuchen und <code>RBAC</code>. Interaktives Dashboard via <code>ApexCharts</code> und automatisierter Excel-Export via <code>ClosedXML</code>.",
     ergebnis: "Erfolgreich abgenommenes, audit-sicheres Enterprise-System mit 4+ Kernmodulen. Kosteneffiziente In-House-Lösung: <code>ca. 18% Ersparnis</code> bei Lizenz- und Dienstleisterkosten. Bildet zugleich die solide API-Basis für das spätere React-Frontend (Vista).",
     rolle: "Vollständig eigenverantwortliche Konzeption und Umsetzung aller Schichten von Grund auf: Relationales Datenbankdesign, Backend- und API-Architektur, Sicherheitsinfrastruktur sowie Benutzeroberfläche.",
-    tech: "C#, ASP.NET MVC, Entity Framework Core, SQL Server, HTML5, CSS3, Bootstrap, JavaScript, jQuery, JWT, Twilio, MailKit, RESTful APIs, GitHub",
+    tech: "C#, ASP.NET MVC, EF Core, SQL Server, HTML5, CSS3, Bootstrap, JavaScript, jQuery, JWT, Twilio, MailKit, RESTful APIs, GitHub",
     status: "completed",
     github: "https://github.com/Goekss/CrmAPP",
     kategorie: "business-crm"
   },
   {
     title: "PLC-OptiFlow",
-    subtitle: "WPF HMI · gRPC Backend · PLC-Simulation",
+    subtitle: "WPF HMI · Simulierte Kesselanlage · gRPC Backend",
     images: [
       {src: "PlcHmi1.png", alt: "PLC-OptiFlow – Übersicht des Kessel-Dashboards" },
       {src: "PlcHmi2.png", alt: "PLC-OptiFlow – Trenddiagramm der Live-Temperatur" }
     ],
-    lead: "Modernes WPF-HMI für ein simuliertes Kessel-System &ndash; als Portfolio-Referenz gebaut. Fokus auf wenige, aber vollständig funktionierende Funktionen: Live-Temperatur, Trend, Alarme und Handbetrieb in einem industriellen Dashboard.",
-    problem: "Industrielle Bedienoberflächen (HMI) sind oft teuer und schwer testbar. Gefragt war eine saubere Referenz, die zeigt, wie ein WPF-Client per gRPC mit einem unabhängigen Backend kommuniziert &ndash; inklusive realistischem Prozessmodell statt starrer Demo-Daten.",
-    ansatz: "Klare Schichtentrennung: Der <code>MVVM</code>-WPF-Client spricht ausschließlich über <code>IPlcService</code> mit dem Backend. Ein <code>FallbackPlcService</code> wechselt automatisch in den Simulationsmodus, wenn das gRPC-Backend nicht erreichbar ist. Das Backend simuliert die Kesselphysik (Heizung &rarr; Temperatur steigt) und leitet Alarme direkt aus der Temperatur ab.",
-    ergebnis: "Vollständig funktionierendes HMI mit Übersicht, Handbetrieb, Alarmen und Einstellungen &ndash; Physik und Alarmlogik durch xUnit-Tests abgesichert. Bereit für die nächste Roadmap-Stufe: SignalR-Web-Monitoring und echte TwinCAT-3-ADS-Anbindung.",
-    rolle: "Eigenverantwortliche Konzeption und Full-Stack-Umsetzung: Architektur, gRPC-Schnittstelle (plc.proto), Kessel-Simulation, MVVM-UI und Tests.",
-    tech: "C#, .NET, WPF, XAML, MVVM (CommunityToolkit.Mvvm), Visual Studio, ASP.NET Core, gRPC, Protobuf, xUnit",
+    lead: "Modernes WPF-HMI für eine simulierte Kesselanlage &ndash; als Portfolio-Referenz gebaut. Klare Zustände, Grenzwerte, Alarme und ein nachvollziehbarer Temperaturtrend: wenige, aber vollständig funktionierende Funktionen statt vieler halbfertiger Features.",
+    problem: "Industrielle Bedienoberflächen (HMI) sind oft teuer und schwer testbar. Gefragt war eine saubere Referenz, die zeigt, wie ein WPF-Client per gRPC mit einem unabhängigen Backend kommuniziert &ndash; inklusive realistischem Prozessmodell (Kesselphysik) statt starrer Demo-Daten.",
+    ansatz: "Klare Schichtentrennung: Der <code>MVVM</code>-WPF-Client (<code>OptiCHmiApp</code>) spricht ausschließlich über <code>IPlcService</code> mit dem Backend (<code>OptiCHmiApp.Backend</code>) &ndash; das Backend rechnet die Kesselphysik, der Client zeigt und steuert. Ohne laufendes Backend wechselt ein <code>FallbackPlcService</code> automatisch in den Simulationsmodus. Dazu feste Statusleiste, Alarmbanner, Prozessschema mit Flussanimation, Grenzwert-Kadran (80/90 °C), Notaus mit Verriegelung sowie Hell/Dunkel und fünf Sprachen (DE, EN, IT, FR, TR) zur Laufzeit.",
+    ergebnis: "Vollständig funktionierendes HMI mit Übersicht, Alarmen, Handbetrieb und Einstellungen. 10 xUnit-Tests sichern Physik (Heizen/Kühlen), 80/90 °C-Alarmschwellen, Notaus-Kette, Zielabschaltung und Navigation ab. TwinCAT-3.1-PLC (OOP), ADS-Anbindung und OPC-UA-Server sind implementiert; geplant sind SignalR + React und OxyPlot/LiveCharts2.",
+    rolle: "Eigenverantwortliche Konzeption und Full-Stack-Umsetzung: Architektur, gRPC-Schnittstelle, Kessel-Simulation, MVVM-UI (<code>OptiCHmiApp</code>) und Tests.",
+    tech: "C#, .NET, WPF, XAML, MVVM , Visual Studio, ASP.NET Core, gRPC, Protobuf, xUnit, TwinCAT 3.1, OPC UA, ADS",
     status: "completed",
     github: "https://github.com/Goekss/PLC-OptiFlow",
     kategorie: "industrie-desktop"
@@ -799,7 +805,7 @@ const contentMap = {
             <article class="competency-card comp-option">
               <span class="comp-tab"><i class='bx bx-server'></i><span class="comp-tab-name">Backend</span></span>
               <div class="comp-body">
-                <p class="competency-stack project-tech">C#, ASP.NET Core, ASP.NET MVC, EF Core, SQL Server, Mysql, Redis, Swagger, Node.js, Express.js</p>
+                <p class="competency-stack project-tech">C#, .NET, ASP.NET Core, EF Core, SQL Server, Mysql, Redis, Swagger, Node.js, Express.js</p>
                 <p class="comp-desc">
                   <strong>Praktische Anwendung:</strong> REST-APIs, JWT-Authentifizierung,
                   Rollen- und Rechte-Modelle, Datenmodellierung und serverseitige Geschäftslogik.
@@ -815,7 +821,7 @@ const contentMap = {
               <span class="comp-tab"><i class='bx bx-code-alt'></i><span class="comp-tab-name">Frontend</span></span>
               <div class="comp-body">
                 
-                <p class="competency-stack project-tech">HTML5, CSS3, Tailwind CSS, Bootstrap, JavaScript, React, Vite, Blazor, React Router, Axios</p>
+                <p class="competency-stack project-tech"> JavaScript, TypeScript, React, HTML5, CSS3, Tailwind CSS, Bootstrap, Vite, Blazor, Axios</p>
                 <p class="comp-desc">
                   <strong>Praktische Anwendung:</strong> SPA-Strukturen, Dashboard-Oberflächen,
                   responsive Layouts, State-Handling und API-Anbindung im Client.
