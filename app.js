@@ -12,7 +12,7 @@ function renderProjectTechIcons() {
     "CSS3": "devicon-css3-plain-wordmark colored",
     "JavaScript": "devicon-javascript-plain colored",
     "Express.js": "devicon-express-original",
-    "Node.js": "devicon-nodejs-line-wordmark colored",
+    //"Node.js": "devicon-nodejs-line-wordmark colored",
     "npm": "devicon-npm-plain colored",
     "C#": "devicon-csharp-plain colored",
     "ASP.NET MVC": "devicon-dot-net-plain colored",
@@ -33,7 +33,6 @@ function renderProjectTechIcons() {
     "SQL": "devicon-microsoftsqlserver-plain colored",
     "SQL Server": "devicon-microsoftsqlserver-plain colored",
     "Bootstrap": "devicon-bootstrap-plain colored",
-    "Tailwind CSS": "devicon-tailwindcss-plain colored",
     "jQuery": "devicon-jquery-plain colored",
     "React": "devicon-react-plain colored",
     "Vite": "devicon-vitejs-plain colored",
@@ -44,7 +43,7 @@ function renderProjectTechIcons() {
     "Vitest": "devicon-vitest-plain colored",
     "Postman": "devicon-postman-plain colored",
     "GitHub": "devicon-github-plain white",
-    "GitHub Actions": "devicon-githubactions-plain",
+    //"GitHub Actions": "devicon-githubactions-plain",
     "Git": "devicon-git-plain colored",
     "Cloud": "devicon-googlecloud-plain",
     "Python": "devicon-python-plain colored",
@@ -76,7 +75,7 @@ function renderProjectTechIcons() {
   const imgIconMap = {
     "Ollama": ollamaIconCdn,
     "Qdrant": "https://cdn.simpleicons.org/qdrant",
-    "OpenRouter": "https://cdn.simpleicons.org/openrouter/e8e8e8",
+    "OpenRouter": "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/openrouter/mono.svg",
     "Cursor": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://cursor.com&size=128",
     "GitHub Copilot": "https://cdn.simpleicons.org/githubcopilot/e8e8e8",
     "XAML": "https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_xaml.svg",
@@ -84,7 +83,11 @@ function renderProjectTechIcons() {
     "DeepSeek": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.deepseek.com&size=128",
     ".NET": "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/microsoft-dotnet/default.svg",
     "gRPC" : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css",
-    "TypeScript":"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+    "TypeScript":"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    "Node.js":"https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/nodejs/default.svg",
+    "GitHub Actions":"https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/github-actions/default.svg",
+    "Tailwind CSS" :"https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/tailwind-css/default.svg",
+    "VS Code":"https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/visual-studio-code/default.svg"
   };
 
   document.querySelectorAll(".project-tech").forEach(div => {
@@ -523,7 +526,7 @@ const projectsData = [
     ansatz: "Privacy-by-Design: Lokale Inferenz über <code>Ollama</code> und <code>Qdrant</code>, orchestriert via <code>Semantic Kernel</code>. Das Backend erzwingt strikte Mandantentrennung direkt über globale EF Core Query Filter. Entkoppelte React-SPA mit SignalR-WebSockets für Echtzeit-Interaktion.",
     ergebnis: "Funktionsfähige SaaS-Basis mit 10+ Fachmodulen (Kunden, Tickets, Projekte, Chat). Mandanten-Isolation durch 6 xUnit-Integrationstests abgesichert. Vollständig per Docker Compose reproduzierbar &ndash; die Datenverarbeitung bleibt lokal im Haus.",
     rolle: "Eigenverantwortliche Konzeption und Full-Stack-Umsetzung: API- und Datenmodellierung in .NET 9, RAG-Pipeline-Integration sowie modulare Frontend-Entwicklung in React.",
-    tech: "C#, .NET, EF Core, SQL Server, JavaScript, React, Vite, Axios, Bootstrap, Swagger, Redis, Docker, Azure, xUnit, GitHub Actions, SignalR, JWT, Recharts, Ollama, Qdrant, Semantic Kernel",
+    tech: "C#,.NET, EF Core, SQL Server, JavaScript, React, Vite, Axios, Bootstrap, Swagger, Redis, Docker, Azure, xUnit, GitHub Actions, SignalR, JWT, Recharts, Ollama, Qdrant, Semantic Kernel, Visual Studio, VS Code",
     status: "ongoing",
     github: "https://github.com/Goekss/Vista.CoreX",
     kategorie: "ki-saas"
@@ -543,7 +546,7 @@ const projectsData = [
     ansatz: "Freier KI-Zugang ohne Abo: Intelligente Bündelung leistungsfähiger <code>OpenRouter</code>-Modelle (Llama, Qwen, StepFun) in einer einheitlichen Oberfläche. Client-side Parsing (<code>PDF, Word, Excel, Vision</code>) hält das Backend schlank und eliminiert Serverkosten; der <code>Express-Proxy</code> schützt sensible API-Keys.",
     ergebnis: "Frei zugängliche, multimodale Open-Source-Lösung für jedermann: Keine Paywalls, keine Abos &ndash; das Geld bleibt im Geldbeutel! Minimaler Server-Footprint und automatisiert per CI/CD auf <code>GitHub Pages</code> bereitgestellt.",
     rolle: "Vollständig eigenes Konzept und eigenverantwortliche Full-Stack-Entwicklung von Grund auf: <code>React 19</code> Frontend (Glassmorphism), zustandsloser <code>Express-Proxy</code>, clientseitige Parsing-Pipeline und CI/CD-Deployment.",
-    tech: "React, Node.js, Express.js, JavaScript,TypeScript, HTML5, CSS3, GitHub Actions, Docker, REST APIs, Client-side File Parsing, OpenRouter AI",
+    tech: "React, Node.js, Express.js, JavaScript,TypeScript, HTML5, CSS3, GitHub Actions, Docker, REST APIs, Client-side File Parsing, OpenRouter, VS Code",
     status: "completed",
     github: "https://github.com/Goekss/GoAI-ChatLab",
     kategorie: "ki-saas"
@@ -560,7 +563,7 @@ const projectsData = [
     ansatz: "Vollständige Eigenentwicklung ohne Framework-Abhängigkeiten: Dynamisches <code>contentMap</code>- und <code>Overlay-Routing</code> ohne Seiten-Reloads, flüssige <code>Parallax</code>- und <code>Mauszeiger-Glow</code>-Tiefeneffekte sowie direkte <code>iframe</code>-PDF-Vorschau für Zeugnisse und Zertifikate. Strikte <code>DSGVO</code>-Konformität.",
     ergebnis: "Ein dynamischer, visuell ansprechender persönlicher Hub mit flüssigen Parallax-Effekten &ndash; genau das Ergebnis, das ich von Anfang an als Ziel vor Augen hatte. Blitzschnelle Ladezeiten, null Wartungsaufwand und stabil auf <code>GitHub Pages</code> gehostet.",
     rolle: "Vollständig eigene Vision, UI/UX-Konzeption und eigenverantwortliche Entwicklung von Grund auf: Semantische HTML5-Struktur, modulares CSS3-Design-System und ereignisgesteuerte JavaScript-Architektur.",
-    tech: "HTML5, CSS3, JavaScript, Bootstrap, GitHub Actions",
+    tech: "HTML5, CSS3, JavaScript, Bootstrap, GitHub Actions, VS Code",
     status: "completed",
     github: "https://github.com/Goekss/Web-Portfolio",
     kategorie: "web-design"
@@ -577,7 +580,7 @@ const projectsData = [
     ansatz: "Decoupled Architecture: <code>React</code> mit <code>React Router</code> für clientseitiges Routing und <code>JWT</code>-Auth direkt gegen die eigene <code>ASP.NET Web API</code>. Vollständiges Personen-CRUD, gezieltes State-Management via Drag-&-Drop-<code>Kanban-Board</code> sowie Anbindung externer Schnittstellen wie <code>OpenWeatherMap</code>.",
     ergebnis: "Stabile, hochperformante SPA, die beweist, wie ein bestehendes Enterprise-Backend ohne Refactoring mit einem modernen Frontend kombiniert werden kann. Modulare Komponentenstruktur, sofort einsatzbereit für Präsentationen.",
     rolle: "Vollständig eigenes Frontend-Konzept und eigenständige Umsetzung: UI/UX-Design, komponentenbasierte React-Architektur, REST-API-Integration und State-Management.",
-    tech: "React, React Router, JavaScript, HTML5, CSS3, JWT, REST APIs",
+    tech: "React, React Router, JavaScript, HTML5, CSS3, JWT, REST APIs, VS Code",
     status: "ongoing",
     github: "https://github.com/Goekss/CrmAppNova",
     kategorie: "business-crm"
@@ -594,7 +597,7 @@ const projectsData = [
     ansatz: "Hybride Architektur: <code>ASP.NET MVC 5</code> mit <code>Entity Framework 6 (Code-First)</code> und integrierter <code>RESTful Web API</code> für moderne Clients (z.&nbsp;B. React). Praxisnahes Sicherheitskonzept: <code>2FA via MailKit</code>, automatischer <code>Brute-Force Lockout</code> nach 3 Fehlversuchen und <code>RBAC</code>. Interaktives Dashboard via <code>ApexCharts</code> und automatisierter Excel-Export via <code>ClosedXML</code>.",
     ergebnis: "Erfolgreich abgenommenes, audit-sicheres Enterprise-System mit 4+ Kernmodulen. Kosteneffiziente In-House-Lösung: <code>ca. 18% Ersparnis</code> bei Lizenz- und Dienstleisterkosten. Bildet zugleich die solide API-Basis für das spätere React-Frontend (Vista).",
     rolle: "Vollständig eigenverantwortliche Konzeption und Umsetzung aller Schichten von Grund auf: Relationales Datenbankdesign, Backend- und API-Architektur, Sicherheitsinfrastruktur sowie Benutzeroberfläche.",
-    tech: "C#, ASP.NET MVC, EF Core, SQL Server, HTML5, CSS3, Bootstrap, JavaScript, jQuery, JWT, Twilio, MailKit, RESTful APIs, GitHub",
+    tech: "C#, ASP.NET MVC, EF Core, JavaScript, HTML5, CSS3, Tailwind CSS, SQL Server, jQuery,JWT, Twilio, MailKit, RESTful APIs, GitHub, Visual Studio",
     status: "completed",
     github: "https://github.com/Goekss/CrmAPP",
     kategorie: "business-crm"
@@ -611,7 +614,7 @@ const projectsData = [
     ansatz: "Klare Schichtentrennung: Der <code>MVVM</code>-WPF-Client (<code>OptiCHmiApp</code>) spricht ausschließlich über <code>IPlcService</code> mit dem Backend (<code>OptiCHmiApp.Backend</code>) &ndash; das Backend rechnet die Kesselphysik, der Client zeigt und steuert. Ohne laufendes Backend wechselt ein <code>FallbackPlcService</code> automatisch in den Simulationsmodus. Dazu feste Statusleiste, Alarmbanner, Prozessschema mit Flussanimation, Grenzwert-Kadran (80/90 °C), Notaus mit Verriegelung sowie Hell/Dunkel und fünf Sprachen (DE, EN, IT, FR, TR) zur Laufzeit.",
     ergebnis: "Vollständig funktionierendes HMI mit Übersicht, Alarmen, Handbetrieb und Einstellungen. 10 xUnit-Tests sichern Physik (Heizen/Kühlen), 80/90 °C-Alarmschwellen, Notaus-Kette, Zielabschaltung und Navigation ab. TwinCAT-3.1-PLC (OOP), ADS-Anbindung und OPC-UA-Server sind implementiert; geplant sind SignalR + React und OxyPlot/LiveCharts2.",
     rolle: "Eigenverantwortliche Konzeption und Full-Stack-Umsetzung: Architektur, gRPC-Schnittstelle, Kessel-Simulation, MVVM-UI (<code>OptiCHmiApp</code>) und Tests.",
-    tech: "C#, .NET, WPF, XAML, MVVM , Visual Studio, ASP.NET Core, gRPC, Protobuf, xUnit, TwinCAT 3.1, OPC UA, ADS",
+    tech: "C#, .NET, WPF, XAML, MVVM, ASP.NET Core, gRPC, Protobuf, xUnit, TwinCAT 3.1, OPC UA, ADS, Visual Studio",
     status: "completed",
     github: "https://github.com/Goekss/PLC-OptiFlow",
     kategorie: "industrie-desktop"
@@ -645,7 +648,7 @@ const projectsData = [
     ansatz: "Konsequenter <code>Mobile-First</code>-Ansatz mit fluiden <code>CSS Grid</code>- und <code>Flexbox</code>-Systemen. Eigene Breakpoint-Hierarchie, typografische Skalierung und Bildoptimierung ohne Zuhilfenahme externer CSS-Bibliotheken.",
     ergebnis: "Pixel-stabiles, barrierefreies und extrem performantes Layout von <code>320px bis 4K</code>. Diente als fundierte handwerkliche Basis für alle späteren Frontends (wie Vista.CoreX und GoAI).",
     rolle: "Vollständig eigenes Layoutkonzept, visuelle Bildkomposition und eigenständige Umsetzung mit semantischem <code>HTML5</code> und modernem <code>CSS3</code>.",
-    tech: "HTML5, CSS3",
+    tech: "HTML5, CSS3, VS Code",
     status: "completed",
     github: "#",
     kategorie: "web-design"
